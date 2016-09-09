@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MagicalMoveCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="逗豆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeC-Zz-j3z">
+                        <rect key="frame" x="0.0" y="159" width="150" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="KN5-iB-ElC">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KN5-iB-ElC" secondAttribute="trailing" id="61X-Rf-0nz"/>
+                <constraint firstItem="UeC-Zz-j3z" firstAttribute="top" secondItem="KN5-iB-ElC" secondAttribute="bottom" constant="9" id="7Xl-PK-2KD"/>
+                <constraint firstItem="UeC-Zz-j3z" firstAttribute="top" secondItem="KN5-iB-ElC" secondAttribute="bottom" constant="9" id="AoM-sa-WuJ"/>
+                <constraint firstItem="KN5-iB-ElC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="B8M-3N-CZS"/>
+                <constraint firstItem="KN5-iB-ElC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="P28-iN-a9c"/>
+                <constraint firstItem="UeC-Zz-j3z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Z5S-is-RL5"/>
+                <constraint firstAttribute="bottom" secondItem="UeC-Zz-j3z" secondAttribute="bottom" id="sFi-hx-e7I"/>
+                <constraint firstAttribute="trailing" secondItem="UeC-Zz-j3z" secondAttribute="trailing" id="sRe-MH-Veb"/>
+            </constraints>
+            <connections>
+                <outlet property="IconImageView" destination="KN5-iB-ElC" id="Rgz-sl-sRK"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon.png" width="180" height="180"/>
+    </resources>
+</document>

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "WPYTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    WPYTabBarController * tabBarController = [[WPYTabBarController alloc] init];
+    NSLog(@"dddddd%p",tabBarController);
+    NSLog(@"%ld",tabBarController.viewControllers.count);
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -1,0 +1,17 @@
+//
+//  pch.pch
+//  WPYAnimation
+//
+//  Created by 又一车－UI on 16/8/5.
+//  Copyright © 2016年 wpy. All rights reserved.
+//
+
+#ifndef pch_pch
+#define pch_pch
+#import "WPYButton.h"
+#define ColorValue arc4random()%256/255.0
+#define BackgroundColor [UIColor colorWithRed:ColorValue green:ColorValue blue:ColorValue alpha:1]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* pch_pch */
