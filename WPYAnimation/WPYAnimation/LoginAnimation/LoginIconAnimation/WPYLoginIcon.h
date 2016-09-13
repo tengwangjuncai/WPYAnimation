@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WPYLoginIcon : UIImageView
+@interface WPYLoginIcon : UIImageView<UIApplicationDelegate>
 
 typedef void (^LoginAnimation)();
 
-@property (nonatomic,assign)LoginAnimation handle;
+@property (nonatomic,copy)LoginAnimation handle;
+@property (nonatomic, strong)UIView *maskView;
 
 - (void)beginLoginAnimation;
 

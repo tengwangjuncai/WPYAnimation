@@ -46,10 +46,13 @@
 		9708DF1B1D4E6E9900976897 /* ImagesAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DF1A1D4E6E9900976897 /* ImagesAnimation.m */; };
 		E026A00E1D76CB3F009103DE /* WPYCubeAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A00D1D76CB3F009103DE /* WPYCubeAnimationLayer.m */; };
 		E026A0111D76E380009103DE /* WPY3DCubeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A0101D76E380009103DE /* WPY3DCubeAnimationView.m */; };
+		E05326CC1D86840100B8C409 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = E05326CB1D86840100B8C409 /* bg1.png */; };
 		E05870E71D62AB5100CE5019 /* PopViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E05870E61D62AB5100CE5019 /* PopViewVC.m */; };
 		E06F46011D66A0C80004FABF /* PageCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06F46001D66A0C80004FABF /* PageCoverVC.m */; };
 		E06F46041D66A1490004FABF /* PageCoverPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06F46031D66A1490004FABF /* PageCoverPushVC.m */; };
 		E0727A391D640D1C00FFF48C /* PopViewPresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0727A381D640D1C00FFF48C /* PopViewPresentVC.m */; };
+		E072F07E1D87AA0B005B6A0D /* textViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E072F07D1D87AA0B005B6A0D /* textViewVC.m */; };
+		E072F0801D87ABCC005B6A0D /* root.png in Resources */ = {isa = PBXBuildFile; fileRef = E072F07F1D87ABCC005B6A0D /* root.png */; };
 		E075551F1D7524E0001D9A4B /* WPYLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E075551E1D7524E0001D9A4B /* WPYLoginButton.m */; };
 		E080E2EA1D596FE600EFFA8A /* WPYTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E080E2E91D596FE600EFFA8A /* WPYTransition.m */; };
 		E080E2ED1D5984F800EFFA8A /* WPYTransitionGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E080E2EC1D5984F800EFFA8A /* WPYTransitionGesture.m */; };
@@ -104,6 +107,7 @@
 		E091D68C1D5899F300C5A7EF /* ViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E091D68B1D5899F300C5A7EF /* ViewAnimation.m */; };
 		E0952ACC1D6ED021001A8177 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = E0952ACB1D6ED021001A8177 /* login.png */; };
 		E0952AD21D6EDC43001A8177 /* WPYSpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0952AD11D6EDC43001A8177 /* WPYSpinerLayer.m */; };
+		E09F6B2B1D8695220072A560 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E09F6B2A1D8695220072A560 /* bg.png */; };
 		E0A61CC11D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A61CC01D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png */; };
 		E0BF87F11D7915D6008210FF /* LoginBtnAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F01D7915D6008210FF /* LoginBtnAnimationVC.m */; };
 		E0BF87F41D795CE5008210FF /* WPYLoginIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F31D795CE5008210FF /* WPYLoginIcon.m */; };
@@ -164,6 +168,7 @@
 		E026A00D1D76CB3F009103DE /* WPYCubeAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYCubeAnimationLayer.m; sourceTree = "<group>"; };
 		E026A00F1D76E380009103DE /* WPY3DCubeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPY3DCubeAnimationView.h; sourceTree = "<group>"; };
 		E026A0101D76E380009103DE /* WPY3DCubeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPY3DCubeAnimationView.m; sourceTree = "<group>"; };
+		E05326CB1D86840100B8C409 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
 		E05870E51D62AB5100CE5019 /* PopViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewVC.h; sourceTree = "<group>"; };
 		E05870E61D62AB5100CE5019 /* PopViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewVC.m; sourceTree = "<group>"; };
 		E06F45FF1D66A0C80004FABF /* PageCoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCoverVC.h; sourceTree = "<group>"; };
@@ -172,6 +177,9 @@
 		E06F46031D66A1490004FABF /* PageCoverPushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCoverPushVC.m; sourceTree = "<group>"; };
 		E0727A371D640D1C00FFF48C /* PopViewPresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewPresentVC.h; sourceTree = "<group>"; };
 		E0727A381D640D1C00FFF48C /* PopViewPresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewPresentVC.m; sourceTree = "<group>"; };
+		E072F07C1D87AA0B005B6A0D /* textViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textViewVC.h; sourceTree = "<group>"; };
+		E072F07D1D87AA0B005B6A0D /* textViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textViewVC.m; sourceTree = "<group>"; };
+		E072F07F1D87ABCC005B6A0D /* root.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = root.png; sourceTree = "<group>"; };
 		E075551D1D7524E0001D9A4B /* WPYLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYLoginButton.h; sourceTree = "<group>"; };
 		E075551E1D7524E0001D9A4B /* WPYLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYLoginButton.m; sourceTree = "<group>"; };
 		E080E2E81D596FE600EFFA8A /* WPYTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WPYTransition.h; path = WPYAnimation/WPYAnimation/ChangeViewAnimation/customTransitionAnimation/WPYTransition.h; sourceTree = SOURCE_ROOT; };
@@ -259,6 +267,7 @@
 		E0952ACB1D6ED021001A8177 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		E0952AD01D6EDC43001A8177 /* WPYSpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYSpinerLayer.h; sourceTree = "<group>"; };
 		E0952AD11D6EDC43001A8177 /* WPYSpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYSpinerLayer.m; sourceTree = "<group>"; };
+		E09F6B2A1D8695220072A560 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		E0A61CC01D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		E0BF87EF1D7915D6008210FF /* LoginBtnAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginBtnAnimationVC.h; sourceTree = "<group>"; };
 		E0BF87F01D7915D6008210FF /* LoginBtnAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBtnAnimationVC.m; sourceTree = "<group>"; };
@@ -282,6 +291,7 @@
 		9708DEA51D4E53D900976897 = {
 			isa = PBXGroup;
 			children = (
+				E09F6B2A1D8695220072A560 /* bg.png */,
 				9708DEB01D4E53D900976897 /* WPYAnimation */,
 				9708DEAF1D4E53D900976897 /* Products */,
 			);
@@ -442,6 +452,7 @@
 				E088988C1D5496BD00AD4870 /* qiu3.jpg */,
 				E08898901D5496C600AD4870 /* qiu5.jpg */,
 				E08898921D5496DB00AD4870 /* flake.png */,
+				E072F07F1D87ABCC005B6A0D /* root.png */,
 				E0A61CC01D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png */,
 			);
 			path = Source;
@@ -450,6 +461,7 @@
 		9708DEEE1D4E60A300976897 /* webChat */ = {
 			isa = PBXGroup;
 			children = (
+				E05326CB1D86840100B8C409 /* bg1.png */,
 				9708DEEF1D4E60A300976897 /* tabbar_bg.png */,
 				9708DEF01D4E60A300976897 /* tabbar_bg@2x.png */,
 				9708DEF11D4E60A300976897 /* tabbar_contacts@2x.png */,
@@ -774,6 +786,8 @@
 				E0BF87F01D7915D6008210FF /* LoginBtnAnimationVC.m */,
 				E0BF87F51D7982AC008210FF /* LoginIconAnimationVC.h */,
 				E0BF87F61D7982AC008210FF /* LoginIconAnimationVC.m */,
+				E072F07C1D87AA0B005B6A0D /* textViewVC.h */,
+				E072F07D1D87AA0B005B6A0D /* textViewVC.m */,
 			);
 			name = AnimationVC;
 			sourceTree = "<group>";
@@ -809,6 +823,7 @@
 				TargetAttributes = {
 					9708DEAD1D4E53D900976897 = {
 						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -839,6 +854,7 @@
 				9708DEC11D4E53D900976897 /* LaunchScreen.storyboard in Resources */,
 				9708DF181D4E60A300976897 /* 美女07.jpg in Resources */,
 				9708DF091D4E60A300976897 /* tabbar_contacts@3x.png in Resources */,
+				E05326CC1D86840100B8C409 /* bg1.png in Resources */,
 				E091D6711D586D1100C5A7EF /* basketball.jpg in Resources */,
 				E088987B1D54649100AD4870 /* runner0.jpg in Resources */,
 				9708DF051D4E60A300976897 /* 4.png in Resources */,
@@ -852,6 +868,7 @@
 				E08898801D54649100AD4870 /* runner5.jpg in Resources */,
 				9708DF0B1D4E60A300976897 /* tabbar_contactsHL@3x.png in Resources */,
 				E091D6701D586D1100C5A7EF /* basket2.jpg in Resources */,
+				E09F6B2B1D8695220072A560 /* bg.png in Resources */,
 				E080E2FF1D59C26F00EFFA8A /* book.jpg in Resources */,
 				E091D67D1D586D1600C5A7EF /* p2.jpg in Resources */,
 				E088988F1D5496C200AD4870 /* qiu1.png in Resources */,
@@ -883,6 +900,7 @@
 				E088988D1D5496BD00AD4870 /* qiu3.jpg in Resources */,
 				E08898911D5496C600AD4870 /* qiu5.jpg in Resources */,
 				E088987C1D54649100AD4870 /* runner1.jpg in Resources */,
+				E072F0801D87ABCC005B6A0D /* root.png in Resources */,
 				E091D6801D586D1600C5A7EF /* tree4.jpg in Resources */,
 				E080E2FE1D59C26F00EFFA8A /* icon.png in Resources */,
 				9708DEBE1D4E53D900976897 /* Assets.xcassets in Resources */,
@@ -915,6 +933,7 @@
 				9708DEDC1D4E5E2300976897 /* ImagesAnimationViewController.m in Sources */,
 				E091D68C1D5899F300C5A7EF /* ViewAnimation.m in Sources */,
 				E075551F1D7524E0001D9A4B /* WPYLoginButton.m in Sources */,
+				E072F07E1D87AA0B005B6A0D /* textViewVC.m in Sources */,
 				E080E31B1D59C45300EFFA8A /* MASConstraint.m in Sources */,
 				9708DF1B1D4E6E9900976897 /* ImagesAnimation.m in Sources */,
 				E08744981D615CE800C4E190 /* MagicalMoveVC.m in Sources */,
@@ -1007,7 +1026,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1045,7 +1064,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1057,11 +1076,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/pch.pch";
 				INFOPLIST_FILE = WPYAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangpengyu.WPYAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1069,11 +1091,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/pch.pch";
 				INFOPLIST_FILE = WPYAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangpengyu.WPYAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
