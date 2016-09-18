@@ -9,6 +9,7 @@
 #import "FunctionAnimationViewController.h"
 #import "LoginBtnAnimationVC.h"
 #import "LoginIconAnimationVC.h"
+#import "LoginViewAnimationVC.h"
 @interface FunctionAnimationViewController ()
 
 @end
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
      [WPYButton createBtn:@[@"登录按钮Animation",@"登录App图标Animation",@"打印机吐纸登录Animation"] Action:@selector(btnClicked:) SuperVC:self];
 }
 -(void)btnClicked:(UIButton *)btn {
@@ -36,7 +38,8 @@
             break;
         case 102:
         {
-            
+            LoginViewAnimationVC *vc = [[LoginViewAnimationVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         default:

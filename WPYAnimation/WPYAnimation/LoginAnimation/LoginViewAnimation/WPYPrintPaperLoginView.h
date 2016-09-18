@@ -7,32 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void (^LoginAnimation)();
+@protocol  WPYPrintPaperLoginViewDelegate<NSObject>
 
+- (BOOL)loginWithUserName:(NSString *)userName PassWord:(NSString *)pw;
+- (BOOL)registerSucceedWithUserName:(NSString *)userName PassWord:(NSString *)pw CertainPw:(NSString*)cpw PhioneNum:(NSString *)numStr;
+- (void)loginSuccessToTransition;
+@end
 @interface WPYPrintPaperLoginView : UIView
 
-@property (nonatomic, strong)UIImageView * printerImageView;
 
-@property (nonatomic, strong)UIView * loginBackView;
-
-@property (nonatomic, strong)UIView * registerBackView;
-
-@property (nonatomic, strong)UITextField * userNameTextFiled;
-
-@property (nonatomic, strong)UITextField * passWordTextFiled;
-
-@property (nonatomic, strong)UIButton * loginBtn;
-
-@property (nonatomic, strong)UIButton * registerBtn;
-
-@property (nonatomic, strong)UIButton * submitBtn;
-
-@property (nonatomic, strong)UITextField * rgUserNameTextFiled;
-
-@property (nonatomic, strong)UITextField * rgPassWordTextFiled;
-
-@property (nonatomic, strong)UITextField * rgPWCertainTextFiled;
-
-@property (nonatomic, strong)UITextField * rgPhoneNumTextFiled;
+@property (nonatomic, unsafe_unretained) id<WPYPrintPaperLoginViewDelegate>delegate;
 
 
 @end

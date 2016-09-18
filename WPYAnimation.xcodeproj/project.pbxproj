@@ -44,6 +44,7 @@
 		9708DF171D4E60A300976897 /* tabbar_meHL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9708DF001D4E60A300976897 /* tabbar_meHL@3x.png */; };
 		9708DF181D4E60A300976897 /* 美女07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9708DF011D4E60A300976897 /* 美女07.jpg */; };
 		9708DF1B1D4E6E9900976897 /* ImagesAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DF1A1D4E6E9900976897 /* ImagesAnimation.m */; };
+		E004690B1D8E902000281BC5 /* LoginViewAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E004690A1D8E902000281BC5 /* LoginViewAnimationVC.m */; };
 		E026A00E1D76CB3F009103DE /* WPYCubeAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A00D1D76CB3F009103DE /* WPYCubeAnimationLayer.m */; };
 		E026A0111D76E380009103DE /* WPY3DCubeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A0101D76E380009103DE /* WPY3DCubeAnimationView.m */; };
 		E048FD391D8945800058B495 /* WPYPrintPaperLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E048FD381D8945800058B495 /* WPYPrintPaperLoginView.m */; };
@@ -161,6 +162,8 @@
 		9708DF011D4E60A300976897 /* 美女07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女07.jpg"; sourceTree = "<group>"; };
 		9708DF191D4E6E9900976897 /* ImagesAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesAnimation.h; sourceTree = "<group>"; };
 		9708DF1A1D4E6E9900976897 /* ImagesAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesAnimation.m; sourceTree = "<group>"; };
+		E00469091D8E902000281BC5 /* LoginViewAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewAnimationVC.h; sourceTree = "<group>"; };
+		E004690A1D8E902000281BC5 /* LoginViewAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewAnimationVC.m; sourceTree = "<group>"; };
 		E026A00C1D76CB3F009103DE /* WPYCubeAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYCubeAnimationLayer.h; sourceTree = "<group>"; };
 		E026A00D1D76CB3F009103DE /* WPYCubeAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYCubeAnimationLayer.m; sourceTree = "<group>"; };
 		E026A00F1D76E380009103DE /* WPY3DCubeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPY3DCubeAnimationView.h; sourceTree = "<group>"; };
@@ -782,6 +785,8 @@
 				E0BF87F61D7982AC008210FF /* LoginIconAnimationVC.m */,
 				E072F07C1D87AA0B005B6A0D /* textViewVC.h */,
 				E072F07D1D87AA0B005B6A0D /* textViewVC.m */,
+				E00469091D8E902000281BC5 /* LoginViewAnimationVC.h */,
+				E004690A1D8E902000281BC5 /* LoginViewAnimationVC.m */,
 			);
 			name = AnimationVC;
 			sourceTree = "<group>";
@@ -943,6 +948,7 @@
 				E080E2EA1D596FE600EFFA8A /* WPYTransition.m in Sources */,
 				9708DEDF1D4E5E4900976897 /* UIViewAnimationViewController.m in Sources */,
 				9708DEB91D4E53D900976897 /* ViewController.m in Sources */,
+				E004690B1D8E902000281BC5 /* LoginViewAnimationVC.m in Sources */,
 				9708DEB61D4E53D900976897 /* AppDelegate.m in Sources */,
 				9708DEB31D4E53D900976897 /* main.m in Sources */,
 				E0BF87F41D795CE5008210FF /* WPYLoginIcon.m in Sources */,
