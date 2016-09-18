@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     UIImageView * imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
-    imageView.image = [UIImage imageNamed:@"background"];
+    imageView.image = [UIImage imageNamed:@"Spread1"];
     [self.view addSubview:imageView];
     [self createButton];
 }

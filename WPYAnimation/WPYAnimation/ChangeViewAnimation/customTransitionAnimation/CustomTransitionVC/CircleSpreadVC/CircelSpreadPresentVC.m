@@ -35,7 +35,7 @@
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
-    imageView.image = [UIImage imageNamed:@"bg1"];
+    imageView.image = [UIImage imageNamed:@"Spread2"];
     [self.view addSubview:imageView];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];

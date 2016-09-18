@@ -8,7 +8,7 @@
 
 #import "WPYLoginButton.h"
 #import "WPYSpinerLayer.h"
-@interface WPYLoginButton()<UIApplicationDelegate>
+@interface WPYLoginButton()<CAAnimationDelegate>
 
 @property (nonatomic, assign)CFTimeInterval shrinkDuration;
 

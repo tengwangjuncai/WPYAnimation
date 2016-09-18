@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WPYLoginIcon : UIImageView<UIApplicationDelegate>
+@interface WPYLoginIcon : UIImageView<CAAnimationDelegate>
 
 typedef void (^LoginAnimation)();
 

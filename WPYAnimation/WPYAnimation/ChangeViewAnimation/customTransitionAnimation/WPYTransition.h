@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, WPYCTransitionType) {
     WPYCircleSpreadTransitionDismiss
     
 };
-@interface WPYTransition : NSObject<UIViewControllerAnimatedTransitioning,UIApplicationDelegate>
+@interface WPYTransition : NSObject<UIViewControllerAnimatedTransitioning,CAAnimationDelegate>
 
 //转场类型 根据不同的转场类型进行不同的转场操作
 @property (nonatomic, assign) WPYCTransitionType type;
