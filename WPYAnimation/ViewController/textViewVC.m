@@ -15,6 +15,10 @@
     
     UIImageView * bgImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:bgImageView];
-    bgImageView.image = [UIImage imageNamed:@"root"];
+    bgImageView.image = [UIImage imageNamed:@"loginSucceed"];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

@@ -211,7 +211,7 @@
     CAKeyframeAnimation *keyFrameAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     CGPoint point = self.printerImageView.layer.position;
     
-    keyFrameAnimation.values = @[[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
+    keyFrameAnimation.values = @[[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x - 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x + 10, point.y)],[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
     keyFrameAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     keyFrameAnimation.duration = 0.5f;
     keyFrameAnimation.delegate = self;
@@ -223,14 +223,16 @@
     if (self.userNameTextFiled.text.length > 5 && self.userNameTextFiled.text.length < 13 && self.passWordTextFiled.text.length > 5 ) {
         
       BOOL lg =  [self.delegate loginWithUserName:self.userNameTextFiled.text PassWord:self.passWordTextFiled.text];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (lg) {
             [self.delegate loginSuccessToTransition];
+            [self loginViewAppearAnimation];
         }else {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
                 [self loginFailedAnimation];
-            });
             
         }
+             });
     }else if(self.userNameTextFiled.text.length < 5 || self.userNameTextFiled.text.length > 13){
         
     }else if(self.passWordTextFiled.text.length < 5){

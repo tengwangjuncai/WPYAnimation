@@ -8,6 +8,7 @@
 
 #import "LoginViewAnimationVC.h"
 #import "WPYPrintPaperLoginView.h"
+#import "textViewVC.h"
 @interface LoginViewAnimationVC ()<WPYPrintPaperLoginViewDelegate>
 @property (nonatomic, strong)UISwitch *netSwitch;
 @property (nonatomic, strong)WPYPrintPaperLoginView *loginView;
@@ -42,7 +43,8 @@
 }
 
 - (void)loginSuccessToTransition {
-    
+    textViewVC * vc = [[textViewVC alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
