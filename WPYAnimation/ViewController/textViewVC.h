@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface textViewVC : UIViewController
+#import "WPYTransition.h"
+@interface textViewVC : UIViewController<UIViewControllerTransitioningDelegate>
 
 @end

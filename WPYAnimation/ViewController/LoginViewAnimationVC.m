@@ -7,11 +7,11 @@
 //
 
 #import "LoginViewAnimationVC.h"
-#import "WPYPrintPaperLoginView.h"
+#import "WPYTransition.h"
 #import "textViewVC.h"
-@interface LoginViewAnimationVC ()<WPYPrintPaperLoginViewDelegate>
+@interface LoginViewAnimationVC ()<WPYPrintPaperLoginViewDelegate,UIViewControllerTransitioningDelegate>
 @property (nonatomic, strong)UISwitch *netSwitch;
-@property (nonatomic, strong)WPYPrintPaperLoginView *loginView;
+
 @end
 
 @implementation LoginViewAnimationVC
@@ -24,10 +24,9 @@
 }
 
 - (void)createLoginView {
-    WPYPrintPaperLoginView * loginView = [[WPYPrintPaperLoginView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60)];
-    loginView.delegate = self;
-    self.loginView = loginView;
-    [self.view addSubview:loginView];
+    self.loginView = [[WPYPrintPaperLoginView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60)];
+    self.loginView.delegate = self;
+    [self.view addSubview:self.loginView];
     
     self.netSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(self.view.center.x - 15, self.view.frame.size.height - 50, 40, 40)];
     self.netSwitch.onTintColor = [UIColor orangeColor];
@@ -50,6 +49,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

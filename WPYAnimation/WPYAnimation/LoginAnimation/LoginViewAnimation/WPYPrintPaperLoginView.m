@@ -10,7 +10,7 @@
 
 @interface WPYPrintPaperLoginView()<CAAnimationDelegate>
 
-@property (nonatomic, strong)UIImageView * printerImageView;
+
 
 @property (nonatomic, strong)UIView * loginBackView;
 

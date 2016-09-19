@@ -10,6 +10,14 @@
 
 @implementation textViewVC
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.transitioningDelegate = self;
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -20,5 +28,13 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return [WPYTransition WPYCtransitionWithTransitionType:WPYPrintPaperTransitionPresent];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return [WPYTransition WPYCtransitionWithTransitionType:WPYPrintPaperTransitionPop];
 }
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WPYPrintPaperLoginView.h"
 @interface LoginViewAnimationVC : UIViewController
-
+@property (nonatomic, strong) WPYPrintPaperLoginView *loginView;
 @end

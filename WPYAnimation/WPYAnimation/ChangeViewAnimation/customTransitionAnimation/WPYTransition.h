@@ -26,7 +26,10 @@ typedef NS_ENUM(NSUInteger, WPYCTransitionType) {
     WPYPageCoverTransitionPop,
     
     WPYCircleSpreadTransitionPresent,
-    WPYCircleSpreadTransitionDismiss
+    WPYCircleSpreadTransitionDismiss,
+    
+    WPYPrintPaperTransitionPresent,
+    WPYPrintPaperTransitionPop
     
 };
 @interface WPYTransition : NSObject<UIViewControllerAnimatedTransitioning,CAAnimationDelegate>

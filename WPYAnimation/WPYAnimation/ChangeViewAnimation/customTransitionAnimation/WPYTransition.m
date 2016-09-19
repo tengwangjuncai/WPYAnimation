@@ -13,7 +13,11 @@
 #import "MagicalMoveVC.h"
 #import "MagicalMovePushVC.h"
 #import "MagicalMoveCell.h"
+#import "textViewVC.h"
+#import "LoginViewAnimationVC.h"
 
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 @implementation WPYTransition
 /**
 
@@ -85,6 +89,12 @@
             return 0.5;
         }
             break;
+        case WPYPrintPaperTransitionPresent:
+        case WPYPrintPaperTransitionPop:
+        {
+            return 1.5;
+        }
+            break;
         default:
             return 0.5;
             break;
@@ -146,6 +156,16 @@
         case WPYCircleSpreadTransitionDismiss:
         {
             [self CircleSpreadDismissAnimation:transitionContext];
+        }
+            break;
+        case WPYPrintPaperTransitionPresent:
+        {
+            [self PrintPaperPresentAnimation:transitionContext];
+        }
+            break;
+        case WPYPrintPaperTransitionPop:
+        {
+            
         }
             break;
         default:
@@ -284,7 +304,28 @@
         [transitionContext completeTransition:YES];
     }];
 }
-
+- (void)PrintPaperPresentAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
+    //获取转场前后的两个控制器
+    LoginViewAnimationVC *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    
+    textViewVC * toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    UIView *containerView = [transitionContext containerView];
+    UIView *moveView = [fromVC.loginView.printerImageView snapshotViewAfterScreenUpdates:NO];
+    moveView.frame = [fromVC.loginView.printerImageView convertRect:fromVC.loginView.printerImageView.bounds toView:containerView];
+    [containerView addSubview:moveView];
+    [containerView addSubview:toVC.view];
+    toVC.view.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120, 0);
+    //开始动画
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:1/0.5 options:0 animations:^{
+        toVC.view.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120,(ScreenWidth - 120)/ScreenWidth * ScreenHeight);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.5 animations:^{
+            toVC.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        } completion:^(BOOL finished) {
+            [transitionContext completeTransition:YES];
+        }];
+    }];
+}
 #pragma  mark - 弹出转场 present 动画
 
 - (void)PopViewPresentAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
