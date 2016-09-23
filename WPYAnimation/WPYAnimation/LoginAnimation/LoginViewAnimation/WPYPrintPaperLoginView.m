@@ -97,7 +97,7 @@
     [self.loginBackView  addSubview:self.passWordTextFiled];
     self.passWordTextFiled.hidden = YES;
     
-    [self loginViewAppearAnimation];
+   // [self loginViewAppearAnimation];
 }
 
 - (void)createRegisterView {
@@ -223,10 +223,10 @@
     if (self.userNameTextFiled.text.length > 5 && self.userNameTextFiled.text.length < 13 && self.passWordTextFiled.text.length > 5 ) {
         
       BOOL lg =  [self.delegate loginWithUserName:self.userNameTextFiled.text PassWord:self.passWordTextFiled.text];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (lg) {
             [self.delegate loginSuccessToTransition];
-            [self loginViewAppearAnimation];
+           // [self loginViewAppearAnimation];
         }else {
             
                 [self loginFailedAnimation];

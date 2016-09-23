@@ -24,8 +24,26 @@
     UIImageView * bgImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:bgImageView];
     bgImageView.image = [UIImage imageNamed:@"loginSucceed"];
+    
+    if (self.btnShow) {
+        [self createBtn];
+    }
+    }
+- (void)createBtn {
+    
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 200, 50);
+    btn.center = self.view.center;
+    [btn setTitle:@"点我返回😯哦" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+
 }
 
+- (void)btnClicked:(UIButton *)btn {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -35,6 +53,6 @@
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return [WPYTransition WPYCtransitionWithTransitionType:WPYPrintPaperTransitionPop];
+    return [WPYTransition WPYCtransitionWithTransitionType:WPYPrintPaperTransitionDismiss];
 }
 @end

@@ -39,6 +39,7 @@
         case 102:
         {
             LoginViewAnimationVC *vc = [[LoginViewAnimationVC alloc] init];
+            NSLog(@"____________%p",vc);
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

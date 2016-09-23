@@ -21,8 +21,11 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self createLoginView];
+    
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    [self.loginView loginViewAppearAnimation];
+}
 - (void)createLoginView {
     self.loginView = [[WPYPrintPaperLoginView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60)];
     self.loginView.delegate = self;
@@ -38,12 +41,14 @@
 }
 
 - (BOOL)registerSucceedWithUserName:(NSString *)userName PassWord:(NSString *)pw CertainPw:(NSString *)cpw PhioneNum:(NSString *)numStr {
-    return self.netSwitch;
+    return self.netSwitch.on;
 }
 
 - (void)loginSuccessToTransition {
     textViewVC * vc = [[textViewVC alloc] init];
+    vc.btnShow = YES;
     [self presentViewController:vc animated:YES completion:nil];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

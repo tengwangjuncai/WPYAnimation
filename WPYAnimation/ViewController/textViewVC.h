@@ -10,4 +10,5 @@
 #import "WPYTransition.h"
 @interface textViewVC : UIViewController<UIViewControllerTransitioningDelegate>
 
+@property (nonatomic)BOOL btnShow;
 @end

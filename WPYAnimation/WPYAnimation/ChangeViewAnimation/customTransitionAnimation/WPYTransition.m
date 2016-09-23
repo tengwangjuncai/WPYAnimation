@@ -90,9 +90,9 @@
         }
             break;
         case WPYPrintPaperTransitionPresent:
-        case WPYPrintPaperTransitionPop:
+        case WPYPrintPaperTransitionDismiss:
         {
-            return 1.5;
+            return 2.5;
         }
             break;
         default:
@@ -163,9 +163,9 @@
             [self PrintPaperPresentAnimation:transitionContext];
         }
             break;
-        case WPYPrintPaperTransitionPop:
+        case WPYPrintPaperTransitionDismiss:
         {
-            
+            [self PrintPaperDismissAnimation:transitionContext];
         }
             break;
         default:
@@ -304,28 +304,76 @@
         [transitionContext completeTransition:YES];
     }];
 }
+
+#pragma mark -- 打印机转场Present动画
 - (void)PrintPaperPresentAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     //获取转场前后的两个控制器
-    LoginViewAnimationVC *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UINavigationController *fromVC = ((WPYTabBarController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey]).viewControllers[4];
     
+    LoginViewAnimationVC * VC = fromVC.viewControllers.lastObject;
     textViewVC * toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    
     UIView *containerView = [transitionContext containerView];
-    UIView *moveView = [fromVC.loginView.printerImageView snapshotViewAfterScreenUpdates:NO];
-    moveView.frame = [fromVC.loginView.printerImageView convertRect:fromVC.loginView.printerImageView.bounds toView:containerView];
-    [containerView addSubview:moveView];
+    UIView *moveView = [VC.loginView.printerImageView snapshotViewAfterScreenUpdates:NO];
+    moveView.frame = [VC.loginView.printerImageView convertRect:VC.loginView.printerImageView.bounds toView:containerView];
+    
+    UIView *newView = [toVC.view snapshotViewAfterScreenUpdates:YES];
+    newView.layer.borderWidth = 1;
+    newView.layer.borderColor = [UIColor blackColor].CGColor;
+    newView.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120, 0);
+    toVC.view.hidden = YES;
     [containerView addSubview:toVC.view];
-    toVC.view.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120, 0);
-    //开始动画
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:1/0.5 options:0 animations:^{
-        toVC.view.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120,(ScreenWidth - 120)/ScreenWidth * ScreenHeight);
+    [containerView addSubview:moveView];
+    [containerView addSubview:newView];
+    
+    //开始动画//delay:0 usingSpringWithDamping:1 initialSpringVelocity:1
+    [UIView animateWithDuration:2  animations:^{
+        newView.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120,(ScreenWidth - 120 )/ScreenWidth * ScreenHeight);
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.5 animations:^{
-            toVC.view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        [UIView animateWithDuration:1 animations:^{
+            newView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
         } completion:^(BOOL finished) {
+            moveView.hidden = YES;
+            [newView removeFromSuperview];
+            toVC.view.hidden = NO;
             [transitionContext completeTransition:YES];
         }];
     }];
 }
+
+#pragma mark - 打印机转场 dismiss 动画
+-(void)PrintPaperDismissAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
+    textViewVC * fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UINavigationController * Nav = ((WPYTabBarController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey]).viewControllers[4];
+    LoginViewAnimationVC * toVC = Nav.viewControllers.lastObject;
+    UIView * containerView = [transitionContext containerView];
+    containerView.backgroundColor = [UIColor whiteColor];
+    UIView *MoveView = containerView.subviews.lastObject;
+    UIView *oldView = [fromVC.view snapshotViewAfterScreenUpdates:NO];
+    oldView.layer.borderWidth = 1;
+    oldView.layer.borderColor = [UIColor blackColor].CGColor;
+    MoveView.hidden = NO;
+    oldView.frame = [fromVC.view convertRect:fromVC.view.frame toView:containerView];
+    [containerView addSubview:oldView];
+    toVC.view.hidden = YES;
+    fromVC.view.hidden = YES;
+    [UIView animateWithDuration:1  animations:^{
+        oldView.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120,(ScreenWidth - 120 )/ScreenWidth * ScreenHeight);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1.5 animations:^{
+           oldView.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120,0);
+        } completion:^(BOOL finished) {
+            oldView.hidden = YES;
+            MoveView.hidden = YES;
+            [oldView removeFromSuperview];
+            [MoveView removeFromSuperview];
+            toVC.view.hidden = NO;
+            [transitionContext completeTransition:YES];
+        }];
+    }];
+}
+
+
 #pragma  mark - 弹出转场 present 动画
 
 - (void)PopViewPresentAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {

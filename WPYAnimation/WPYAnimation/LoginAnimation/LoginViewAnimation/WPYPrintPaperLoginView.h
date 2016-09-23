@@ -19,5 +19,6 @@ typedef void (^LoginAnimation)();
 @property (nonatomic, strong)UIImageView * printerImageView;
 @property (nonatomic, unsafe_unretained) id<WPYPrintPaperLoginViewDelegate>delegate;
 
+- (void)loginViewAppearAnimation;
 
 @end
