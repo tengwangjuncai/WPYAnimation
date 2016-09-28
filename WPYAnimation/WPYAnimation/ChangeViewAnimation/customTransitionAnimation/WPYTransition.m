@@ -313,7 +313,15 @@
     LoginViewAnimationVC * VC = fromVC.viewControllers.lastObject;
     textViewVC * toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
+    //******************************************************************************************************
+    //因为有两个模块用到了这个 LoginViewAnimationVC 用于区分是哪个一个模块的（避免崩溃）如果你只用一次 就不用这部分了
+    if (![VC isKindOfClass:[LoginViewAnimationVC class]]) {
+        fromVC = ((WPYTabBarController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey]).viewControllers[3];
+        VC = fromVC.viewControllers.lastObject;
+    }
+    //*******************************************************************************************************
     UIView *containerView = [transitionContext containerView];
+    
     UIView *moveView = [VC.loginView.printerImageView snapshotViewAfterScreenUpdates:NO];
     moveView.frame = [VC.loginView.printerImageView convertRect:VC.loginView.printerImageView.bounds toView:containerView];
     
@@ -327,7 +335,7 @@
     [containerView addSubview:newView];
     
     //开始动画//delay:0 usingSpringWithDamping:1 initialSpringVelocity:1
-    [UIView animateWithDuration:2  animations:^{
+    [UIView animateWithDuration:1.5  animations:^{
         newView.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120,(ScreenWidth - 120 )/ScreenWidth * ScreenHeight);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:1 animations:^{

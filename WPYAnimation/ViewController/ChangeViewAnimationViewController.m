@@ -13,6 +13,7 @@
 #import "MagicalMoveVC.h"
 #import "PopViewVC.h"
 #import "PageCoverVC.h"
+#import "LoginViewAnimationVC.h"
 @interface ChangeViewAnimationViewController ()
 
 @end
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [WPYButton createBtn:@[@"系统自带转场动画",@"翻页转场",@"收缩转场",@"神奇转场",@"弹性转场页面共存"] Action:@selector(btnClicked:) SuperVC:self];
+    [WPYButton createBtn:@[@"系统自带转场动画",@"翻页转场",@"收缩转场",@"神奇转场",@"弹性转场页面共存",@"打印机吐纸转场"] Action:@selector(btnClicked:) SuperVC:self];
     NSLog(@"ssss%p",self);
 }
 
@@ -67,6 +68,13 @@
         case 104:
         {
             PopViewVC *vc = [[PopViewVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 105:
+        {
+            LoginViewAnimationVC * vc = [[LoginViewAnimationVC alloc] init];
+            vc.isTransition = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

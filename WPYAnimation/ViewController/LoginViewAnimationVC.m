@@ -23,7 +23,7 @@
     [self createLoginView];
     
 }
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated {
     [self.loginView loginViewAppearAnimation];
 }
 - (void)createLoginView {
@@ -32,7 +32,11 @@
     [self.view addSubview:self.loginView];
     
     self.netSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(self.view.center.x - 15, self.view.frame.size.height - 50, 40, 40)];
+    self.netSwitch.on = YES;
     self.netSwitch.onTintColor = [UIColor orangeColor];
+    if (self.isTransition) {
+        self.netSwitch.hidden = YES;
+    }
     [self.view addSubview:self.netSwitch];
 }
 

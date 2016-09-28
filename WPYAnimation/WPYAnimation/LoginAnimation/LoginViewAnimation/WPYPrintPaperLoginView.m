@@ -147,7 +147,7 @@
 }
 
 - (void)loginViewAppearAnimation {
-    [UIView animateWithDuration:1 delay:1.5 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:1 delay:0.5 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.loginBackView.frame = CGRectMake(60, 120, self.frame.size.width - 120, 250);
     } completion:^(BOOL finished) {
         self.userNameTextFiled.hidden = NO;
@@ -165,7 +165,7 @@
 
 - (void)registerViewAppearAnimation {
     
-    [UIView animateWithDuration:1 delay:1.5 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:1 delay:1 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.registerBackView.frame = CGRectMake(60, 115, self.frame.size.width - 120, 280);
     } completion:^(BOOL finished) {
         self.rgUserNameTextFiled.hidden = NO;

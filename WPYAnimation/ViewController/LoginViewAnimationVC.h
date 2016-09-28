@@ -10,4 +10,5 @@
 #import "WPYPrintPaperLoginView.h"
 @interface LoginViewAnimationVC : UIViewController
 @property (nonatomic, strong) WPYPrintPaperLoginView *loginView;
+@property (nonatomic) BOOL isTransition;
 @end
