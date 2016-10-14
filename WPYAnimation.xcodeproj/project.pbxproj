@@ -45,6 +45,8 @@
 		9708DF181D4E60A300976897 /* 美女07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9708DF011D4E60A300976897 /* 美女07.jpg */; };
 		9708DF1B1D4E6E9900976897 /* ImagesAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DF1A1D4E6E9900976897 /* ImagesAnimation.m */; };
 		E004690B1D8E902000281BC5 /* LoginViewAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E004690A1D8E902000281BC5 /* LoginViewAnimationVC.m */; };
+		E00CEE941DB0AE1E000C5224 /* WPYCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E00CEE931DB0AE1E000C5224 /* WPYCircleView.m */; };
+		E00CEE971DB0B37D000C5224 /* WPYCircelWaveAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E00CEE961DB0B37D000C5224 /* WPYCircelWaveAnimationView.m */; };
 		E026A00E1D76CB3F009103DE /* WPYCubeAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A00D1D76CB3F009103DE /* WPYCubeAnimationLayer.m */; };
 		E026A0111D76E380009103DE /* WPY3DCubeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A0101D76E380009103DE /* WPY3DCubeAnimationView.m */; };
 		E048FD391D8945800058B495 /* WPYPrintPaperLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E048FD381D8945800058B495 /* WPYPrintPaperLoginView.m */; };
@@ -110,6 +112,11 @@
 		E0BF87F11D7915D6008210FF /* LoginBtnAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F01D7915D6008210FF /* LoginBtnAnimationVC.m */; };
 		E0BF87F41D795CE5008210FF /* WPYLoginIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F31D795CE5008210FF /* WPYLoginIcon.m */; };
 		E0BF87F71D7982AC008210FF /* LoginIconAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F61D7982AC008210FF /* LoginIconAnimationVC.m */; };
+		E0CA8E351DAF659700E94076 /* Cube3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E341DAF659700E94076 /* Cube3DViewController.m */; };
+		E0CA8E381DAF67CC00E94076 /* BarAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E371DAF67CC00E94076 /* BarAnimationViewController.m */; };
+		E0CA8E3B1DAF682700E94076 /* RoundWaterLinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E3A1DAF682700E94076 /* RoundWaterLinesViewController.m */; };
+		E0CA8E3E1DAF685000E94076 /* TouchPopViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E3D1DAF685000E94076 /* TouchPopViewViewController.m */; };
+		E0CA8E441DAF6D5200E94076 /* WPYBarAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E431DAF6D5200E94076 /* WPYBarAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +171,10 @@
 		9708DF1A1D4E6E9900976897 /* ImagesAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesAnimation.m; sourceTree = "<group>"; };
 		E00469091D8E902000281BC5 /* LoginViewAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewAnimationVC.h; sourceTree = "<group>"; };
 		E004690A1D8E902000281BC5 /* LoginViewAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewAnimationVC.m; sourceTree = "<group>"; };
+		E00CEE921DB0AE1E000C5224 /* WPYCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYCircleView.h; sourceTree = "<group>"; };
+		E00CEE931DB0AE1E000C5224 /* WPYCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYCircleView.m; sourceTree = "<group>"; };
+		E00CEE951DB0B37D000C5224 /* WPYCircelWaveAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYCircelWaveAnimationView.h; sourceTree = "<group>"; };
+		E00CEE961DB0B37D000C5224 /* WPYCircelWaveAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYCircelWaveAnimationView.m; sourceTree = "<group>"; };
 		E026A00C1D76CB3F009103DE /* WPYCubeAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYCubeAnimationLayer.h; sourceTree = "<group>"; };
 		E026A00D1D76CB3F009103DE /* WPYCubeAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYCubeAnimationLayer.m; sourceTree = "<group>"; };
 		E026A00F1D76E380009103DE /* WPY3DCubeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPY3DCubeAnimationView.h; sourceTree = "<group>"; };
@@ -273,6 +284,16 @@
 		E0BF87F31D795CE5008210FF /* WPYLoginIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYLoginIcon.m; sourceTree = "<group>"; };
 		E0BF87F51D7982AC008210FF /* LoginIconAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginIconAnimationVC.h; sourceTree = "<group>"; };
 		E0BF87F61D7982AC008210FF /* LoginIconAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginIconAnimationVC.m; sourceTree = "<group>"; };
+		E0CA8E331DAF659700E94076 /* Cube3DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube3DViewController.h; sourceTree = "<group>"; };
+		E0CA8E341DAF659700E94076 /* Cube3DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube3DViewController.m; sourceTree = "<group>"; };
+		E0CA8E361DAF67CC00E94076 /* BarAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarAnimationViewController.h; sourceTree = "<group>"; };
+		E0CA8E371DAF67CC00E94076 /* BarAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarAnimationViewController.m; sourceTree = "<group>"; };
+		E0CA8E391DAF682700E94076 /* RoundWaterLinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundWaterLinesViewController.h; sourceTree = "<group>"; };
+		E0CA8E3A1DAF682700E94076 /* RoundWaterLinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundWaterLinesViewController.m; sourceTree = "<group>"; };
+		E0CA8E3C1DAF685000E94076 /* TouchPopViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPopViewViewController.h; sourceTree = "<group>"; };
+		E0CA8E3D1DAF685000E94076 /* TouchPopViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPopViewViewController.m; sourceTree = "<group>"; };
+		E0CA8E421DAF6D5200E94076 /* WPYBarAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYBarAnimationView.h; sourceTree = "<group>"; };
+		E0CA8E431DAF6D5200E94076 /* WPYBarAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYBarAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +356,9 @@
 		9708DECA1D4E547E00976897 /* WPYAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E0CA8E411DAF6BC200E94076 /* TouchPopViewAnimation */,
+				E0CA8E401DAF6B8400E94076 /* RoundWaterLinesAnimation */,
+				E0CA8E3F1DAF6B5700E94076 /* BarAnimationView */,
 				E091D66A1D58511A00C5A7EF /* BgAnimationView */,
 				9708DED11D4E59A700976897 /* KeyFrameAnimation */,
 				9708DED01D4E579800976897 /* PopViewAnimation */,
@@ -424,12 +448,11 @@
 		9708DED91D4E5CEE00976897 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E0CA8E311DAF64F800E94076 /* CoreAnimation */,
 				E0646FE61D78243B0037A9C7 /* FunctionAnimation */,
 				E091D6861D58824700C5A7EF /* TransitionAnimation */,
 				E08898871D548DEC00AD4870 /* UIViewAnimation */,
 				E08898861D548DB300AD4870 /* ImagesAnimation */,
-				9708DEE01D4E5E9000976897 /* CoreAnimationViewController.h */,
-				9708DEE11D4E5E9000976897 /* CoreAnimationViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -791,6 +814,58 @@
 			name = AnimationVC;
 			sourceTree = "<group>";
 		};
+		E0CA8E311DAF64F800E94076 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA8E321DAF652600E94076 /* AnimationVC */,
+				9708DEE01D4E5E9000976897 /* CoreAnimationViewController.h */,
+				9708DEE11D4E5E9000976897 /* CoreAnimationViewController.m */,
+			);
+			name = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		E0CA8E321DAF652600E94076 /* AnimationVC */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA8E331DAF659700E94076 /* Cube3DViewController.h */,
+				E0CA8E341DAF659700E94076 /* Cube3DViewController.m */,
+				E0CA8E361DAF67CC00E94076 /* BarAnimationViewController.h */,
+				E0CA8E371DAF67CC00E94076 /* BarAnimationViewController.m */,
+				E0CA8E391DAF682700E94076 /* RoundWaterLinesViewController.h */,
+				E0CA8E3A1DAF682700E94076 /* RoundWaterLinesViewController.m */,
+				E0CA8E3C1DAF685000E94076 /* TouchPopViewViewController.h */,
+				E0CA8E3D1DAF685000E94076 /* TouchPopViewViewController.m */,
+			);
+			name = AnimationVC;
+			sourceTree = "<group>";
+		};
+		E0CA8E3F1DAF6B5700E94076 /* BarAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA8E421DAF6D5200E94076 /* WPYBarAnimationView.h */,
+				E0CA8E431DAF6D5200E94076 /* WPYBarAnimationView.m */,
+			);
+			path = BarAnimationView;
+			sourceTree = "<group>";
+		};
+		E0CA8E401DAF6B8400E94076 /* RoundWaterLinesAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E00CEE921DB0AE1E000C5224 /* WPYCircleView.h */,
+				E00CEE931DB0AE1E000C5224 /* WPYCircleView.m */,
+				E00CEE951DB0B37D000C5224 /* WPYCircelWaveAnimationView.h */,
+				E00CEE961DB0B37D000C5224 /* WPYCircelWaveAnimationView.m */,
+			);
+			path = RoundWaterLinesAnimation;
+			sourceTree = "<group>";
+		};
+		E0CA8E411DAF6BC200E94076 /* TouchPopViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TouchPopViewAnimation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -919,7 +994,9 @@
 				E080E3231D59C45300EFFA8A /* ViewController+MASAdditions.m in Sources */,
 				E06F46011D66A0C80004FABF /* PageCoverVC.m in Sources */,
 				E080E3221D59C45300EFFA8A /* View+MASAdditions.m in Sources */,
+				E00CEE971DB0B37D000C5224 /* WPYCircelWaveAnimationView.m in Sources */,
 				E080E2F61D59BB0C00EFFA8A /* CircleSpreadVC.m in Sources */,
+				E00CEE941DB0AE1E000C5224 /* WPYCircleView.m in Sources */,
 				E080E2ED1D5984F800EFFA8A /* WPYTransitionGesture.m in Sources */,
 				9708DED51D4E5AEA00976897 /* WPYTabBarController.m in Sources */,
 				E088986B1D54427700AD4870 /* WPYButton.m in Sources */,
@@ -928,6 +1005,7 @@
 				E080E3201D59C45300EFFA8A /* NSArray+MASAdditions.m in Sources */,
 				9708DEDC1D4E5E2300976897 /* ImagesAnimationViewController.m in Sources */,
 				E091D68C1D5899F300C5A7EF /* ViewAnimation.m in Sources */,
+				E0CA8E381DAF67CC00E94076 /* BarAnimationViewController.m in Sources */,
 				E075551F1D7524E0001D9A4B /* WPYLoginButton.m in Sources */,
 				E072F07E1D87AA0B005B6A0D /* textViewVC.m in Sources */,
 				E080E31B1D59C45300EFFA8A /* MASConstraint.m in Sources */,
@@ -937,11 +1015,14 @@
 				E06F46041D66A1490004FABF /* PageCoverPushVC.m in Sources */,
 				E080E31F1D59C45300EFFA8A /* MASViewConstraint.m in Sources */,
 				E0727A391D640D1C00FFF48C /* PopViewPresentVC.m in Sources */,
+				E0CA8E3E1DAF685000E94076 /* TouchPopViewViewController.m in Sources */,
 				E0952AD21D6EDC43001A8177 /* WPYSpinerLayer.m in Sources */,
 				E087449F1D6169B200C4E190 /* MagicalMoveCell.m in Sources */,
 				E026A00E1D76CB3F009103DE /* WPYCubeAnimationLayer.m in Sources */,
 				E0BF87F71D7982AC008210FF /* LoginIconAnimationVC.m in Sources */,
+				E0CA8E3B1DAF682700E94076 /* RoundWaterLinesViewController.m in Sources */,
 				9708DEE51D4E5EB700976897 /* ChangeViewAnimationViewController.m in Sources */,
+				E0CA8E441DAF6D5200E94076 /* WPYBarAnimationView.m in Sources */,
 				E088986F1D54448900AD4870 /* ImagesVC.m in Sources */,
 				E091D6891D58920500C5A7EF /* UIView+Toast.m in Sources */,
 				E080E31E1D59C45300EFFA8A /* MASViewAttribute.m in Sources */,
@@ -952,6 +1033,7 @@
 				E004690B1D8E902000281BC5 /* LoginViewAnimationVC.m in Sources */,
 				9708DEB61D4E53D900976897 /* AppDelegate.m in Sources */,
 				9708DEB31D4E53D900976897 /* main.m in Sources */,
+				E0CA8E351DAF659700E94076 /* Cube3DViewController.m in Sources */,
 				E0BF87F41D795CE5008210FF /* WPYLoginIcon.m in Sources */,
 				E091D6691D5827CD00C5A7EF /* WPYPopView.m in Sources */,
 				E080E3211D59C45300EFFA8A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,

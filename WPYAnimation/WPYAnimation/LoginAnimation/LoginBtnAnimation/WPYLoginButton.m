@@ -90,7 +90,7 @@
     
     CABasicAnimation *expandAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     expandAnimation.fromValue = @(1.0);
-    expandAnimation.toValue = @(33.0);
+    expandAnimation.toValue = @(55.0);
     expandAnimation.timingFunction = _expandCurve;
     expandAnimation.duration = 0.3;
     expandAnimation.delegate = self;

@@ -7,10 +7,12 @@
 //
 
 #import "CoreAnimationViewController.h"
-#import "WPYCubeAnimationLayer.h"
-#import "WPY3DCubeAnimationView.h"
+#import "Cube3DViewController.h"
+#import "BarAnimationViewController.h"
+#import "RoundWaterLinesViewController.h"
+#import "TouchPopViewViewController.h"
 @interface CoreAnimationViewController ()
-@property(nonatomic, strong) WPY3DCubeAnimationView *CubeView;
+
 @end
 
 @implementation CoreAnimationViewController
@@ -18,24 +20,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.CubeView = [[WPY3DCubeAnimationView alloc] initWithFrame:self.view.frame];//CGRectMake(150, 200, 200, 200)
-    [self.view addSubview:self.CubeView];
-    [self addPanGesture];
-    [self.CubeView addTarget:self Action:@selector(btnClicked:)];
+     [WPYButton createBtn:@[@"3D立方体动画",@"条形动画",@"水波纹动画",@"点击弹性圆圈动画"] Action:@selector(btnClicked:) SuperVC:self];
 }
 
 - (void)btnClicked:(UIButton *)btn {
-    NSLog(@"点我干啥？");
+    switch (btn.tag) {
+        case 100:
+        {
+            Cube3DViewController * vc = [[Cube3DViewController alloc] init];
+            vc.view.backgroundColor = [UIColor colorWithRed:ColorValue green:ColorValue blue:ColorValue alpha:1];
+            [self.navigationController pushViewController:vc animated:nil];
+        }
+            break;
+        case 101:
+        {
+            BarAnimationViewController * vc = [[BarAnimationViewController alloc] init];
+            vc.view.backgroundColor = [UIColor colorWithRed:ColorValue green:ColorValue blue:ColorValue alpha:1];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 102:
+        {
+            RoundWaterLinesViewController * vc = [[RoundWaterLinesViewController alloc] init];
+            vc.view.backgroundColor = [UIColor whiteColor];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 103:
+        {
+            TouchPopViewViewController * vc = [[TouchPopViewViewController alloc] init];
+            vc.view.backgroundColor = [UIColor colorWithRed:ColorValue green:ColorValue blue:ColorValue alpha:1];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
 }
-- (void)addPanGesture {
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    [self.CubeView addGestureRecognizer:pan];
-}
-- (void)pan:(UIPanGestureRecognizer *)recognizer{
-    
-    [self.CubeView pan:recognizer];
- 
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

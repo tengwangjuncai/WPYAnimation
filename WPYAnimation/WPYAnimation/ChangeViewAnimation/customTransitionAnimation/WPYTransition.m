@@ -49,6 +49,17 @@
     View.layer.anchorPoint = point;
 }
 
+// 取快照
+
+- (UIImage *)imageFromView:(UIView *)snapView {
+    UIGraphicsBeginImageContext(snapView.frame.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [snapView.layer renderInContext:context];
+    UIImage *targetImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return targetImage;
+}
 /**
  *  设定转场时间
  *
@@ -281,7 +292,7 @@
     //获取containnerView
     UIView *containerView = [transitionContext containerView];
     //用snapshotViewAfterScreenUpdates 对cell的imageView截图保存成另一个视图 用于移动过渡
-    UIView *MoveView = [cell.IconImageView snapshotViewAfterScreenUpdates:NO];
+    UIImageView *MoveView = [[UIImageView alloc] initWithImage:[self imageFromView:cell.IconImageView]];
     //将点击的cell中的视图转换到当前控制器的坐标 （得到点击视图在整个view中的位置信息并且赋值给快照，再把cell中的imageView隐藏，你看到的视图上的是新生成的快照，而不是点击的cell的视图了）
     MoveView.frame = [cell.IconImageView convertRect:cell.IconImageView.bounds toView:containerView];
     //设置各个控件的状态
@@ -322,10 +333,9 @@
     //*******************************************************************************************************
     UIView *containerView = [transitionContext containerView];
     
-    UIView *moveView = [VC.loginView.printerImageView snapshotViewAfterScreenUpdates:NO];
+     UIImageView *moveView = [[UIImageView alloc] initWithImage:[self imageFromView:VC.loginView.printerImageView]];
     moveView.frame = [VC.loginView.printerImageView convertRect:VC.loginView.printerImageView.bounds toView:containerView];
-    
-    UIView *newView = [toVC.view snapshotViewAfterScreenUpdates:YES];
+    UIImageView *newView = [[UIImageView alloc] initWithImage:[self imageFromView:toVC.view]];
     newView.layer.borderWidth = 1;
     newView.layer.borderColor = [UIColor blackColor].CGColor;
     newView.frame = CGRectMake(60, 120, [UIScreen mainScreen].bounds.size.width - 120, 0);
@@ -357,7 +367,7 @@
     UIView * containerView = [transitionContext containerView];
     containerView.backgroundColor = [UIColor whiteColor];
     UIView *MoveView = containerView.subviews.lastObject;
-    UIView *oldView = [fromVC.view snapshotViewAfterScreenUpdates:NO];
+    UIImageView *oldView = [[UIImageView alloc] initWithImage:[self imageFromView:fromVC.view]];
     oldView.layer.borderWidth = 1;
     oldView.layer.borderColor = [UIColor blackColor].CGColor;
     MoveView.hidden = NO;
@@ -390,7 +400,7 @@
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     //由于在手势过度中直接使用fromVC 动画和手势有冲突，如果不需要实现手势的话，就可以不用截图了。为了解决这个问题可以用snapshotViewAfterScreenUpdates 对fromVC截图采用截图来代替fromVC做动画 就解决了冲突问题
-    UIView *MoveView = [fromVC.view snapshotViewAfterScreenUpdates:NO];
+     UIImageView *MoveView = [[UIImageView alloc] initWithImage:[self imageFromView:fromVC.view]];
     //因为我们要用截图来做转场动画所以fromVC 就可以直接隐藏了
     fromVC.view.hidden = YES;
     
@@ -457,7 +467,7 @@
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     //把当前页面做成快照来完成动画（避免程序出现bug）
-    UIView *CoverPageView = [fromVC.view snapshotViewAfterScreenUpdates:NO];
+     UIImageView *CoverPageView = [[UIImageView alloc] initWithImage:[self imageFromView:fromVC.view]];
     CoverPageView.frame = fromVC.view.frame;
     //获取做动画的页面 一般动画都放在 containerView 中
     UIView *containerView = [transitionContext containerView];
