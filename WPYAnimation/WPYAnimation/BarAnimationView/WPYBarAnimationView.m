@@ -47,25 +47,60 @@
         CGRect frame = CGRectMake(_paddingOfSide + i * (itemWidth + _paddingOfItem), self.bounds.size.height - 1.0, itemWidth, 1);
         UIView *view = [[UIView alloc] initWithFrame:frame];
         view.backgroundColor = _tintColor;
-        view.tag = i + 10;
+        view.tag = i + 100;
         [self addSubview:view];
     }
+}
+//暂停（单个）动画
+- (void)pauseLayer:(CALayer *)layer {
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed = 0.0;
+    layer.timeOffset = pausedTime;
+}
+
+//恢复（单个）动画
+- (void)resumeLayer:(CALayer *)layer {
+    CFTimeInterval pausedTime = [layer timeOffset];
+    layer.speed = 1.0;
+    layer.timeOffset = 0.0;
+    layer.beginTime = 0.0;
+    CFTimeInterval timeSincePuse = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
+    layer.beginTime = timeSincePuse;
 }
 
 - (void)startAnimation {
     for (int i = 0; i < self.numberOfItem; i++) {
-        [self addAnimationWithItemIndex:i];
+        if (!_isStop) {
+            [self addAnimationWithItemIndex:i];
+        }else {
+            WPYBarAnimationView * view = [self viewWithTag:i + 100];
+            [self resumeLayer:view.layer];
+        }
     }
+    
 }
 
 - (void)stopAnimation {
     self.isStop = YES;
+    if (!_isStop) {
+        self.isStop = YES;
+    }
+    for (int i = 0; i< _numberOfItem ; i ++) {
+        WPYBarAnimationView * view = [self viewWithTag:i + 100];
+        [self pauseLayer:view.layer];
+    }
 }
-
+- (void)removeAnimation {
+    for (int i = 0; i< _numberOfItem ; i ++) {
+        WPYBarAnimationView * view = [self viewWithTag:i + 100];
+        [view.layer removeAllAnimations];
+    }
+    self.isStop = NO;
+}
 //个人感觉这个适合做实时动态变化的展示 （如 利用音频高低来模仿音频的高低）
 
 - (void)addAnimationWithItemIndex:(NSInteger)index {
-    UIView * view = [self viewWithTag:index + 10];
+    UIView * view = [self viewWithTag:index + 100];
     NSInteger randomNum = arc4random()%90 + 5;
     CGFloat preHeight = view.frame.size.height;
     CGFloat currentHeight = self.bounds.size.height * randomNum/100;
@@ -79,9 +114,8 @@
         view.frame = frame;
 
     } completion:^(BOOL finished) {
-        if (!_isStop) {
            [self addAnimationWithItemIndex:index];
-        }
+    
     }];
 }
 @end

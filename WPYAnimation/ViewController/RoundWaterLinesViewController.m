@@ -10,6 +10,7 @@
 #import "WPYCircelWaveAnimationView.h"
 @interface RoundWaterLinesViewController ()
 @property (nonatomic, strong)WPYCircelWaveAnimationView *waveView;
+@property (nonatomic, assign) BOOL flag;
 @end
 
 @implementation RoundWaterLinesViewController
@@ -39,7 +40,14 @@
 }
 
 - (void)btnClicked:(UIButton *)btn {
-    [self.waveView stopAnimation];
+    if (!_flag) {
+        [self.waveView stopAnimation];
+        [btn setTitle:@"开始" forState:UIControlStateNormal];
+    }else {
+        [self.waveView startAnimation];
+        [btn setTitle:@"暂停" forState:UIControlStateNormal];
+    }
+    _flag = !_flag;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

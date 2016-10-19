@@ -20,4 +20,6 @@
 
 - (void)startAnimation;
 - (void)stopAnimation;
+//彻底删除动画
+- (void)removeAnimation;
 @end

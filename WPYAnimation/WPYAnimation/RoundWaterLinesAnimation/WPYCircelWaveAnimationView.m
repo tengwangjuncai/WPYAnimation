@@ -70,19 +70,55 @@
     self.lastdelay = _numberOfItem * self.AnimationDelay;
 }
 
+//暂停（单个）动画
+- (void)pauseLayer:(CALayer *)layer {
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed = 0.0;
+    layer.timeOffset = pausedTime;
+}
+
+//恢复（单个）动画
+- (void)resumeLayer:(CALayer *)layer {
+    CFTimeInterval pausedTime = [layer timeOffset];
+    layer.speed = 1.0;
+    layer.timeOffset = 0.0;
+    layer.beginTime = 0.0;
+    CFTimeInterval timeSincePuse = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
+    layer.beginTime = timeSincePuse;
+}
+
+//因为在此为完成效果 为多个View添加了动画  他们又不在一个动画组 所以要遍历单个暂停/开始
 - (void)startAnimation {
     for (int i = 0; i < _numberOfItem; i++) {
-        [self addAnimationWithItemIndex:i];
+        
+        if (!_isStop) {
+            [self addAnimationWithItemIndex:i];
+        }else {
+            WPYCircleView * view = [self viewWithTag:i + 100];
+            [self resumeLayer:view.layer];
+        }
+        
     }
 }
 
+//同上  遍历暂停
 - (void)stopAnimation {
-    self.isStop = YES;
+    if (!_isStop) {
+        self.isStop = YES;
+    }
     for (int i = 0; i< _numberOfItem ; i ++) {
         WPYCircleView * view = [self viewWithTag:i + 100];
-        [view.layer  removeAllAnimations];
+        [self pauseLayer:view.layer];
     }
    }
+
+- (void)removeAnimation {
+    for (int i = 0; i< _numberOfItem ; i ++) {
+        WPYCircleView * view = [self viewWithTag:i + 100];
+        [view.layer removeAllAnimations];
+    }
+    self.isStop = NO;
+}
 - (void)addAnimationWithItemIndex:(NSInteger)index {
     WPYCircleView * view = [self viewWithTag:index + 100];
     [UIView animateWithDuration:3.0 delay:view.delay  options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -99,9 +135,7 @@
         view.center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
             view.delay = self.lastdelay - 3 + self.AnimationDelay;
             self.lastdelay = view.delay;
-        if (!self.isStop) {
             [self addAnimationWithItemIndex:index];
-        }
         
     }];
 }

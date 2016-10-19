@@ -26,4 +26,6 @@
 // 停止动画
 - (void)stopAnimation;
 
+//彻底删除动画
+- (void)removeAnimation;
 @end

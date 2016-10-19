@@ -117,6 +117,7 @@
 		E0CA8E3B1DAF682700E94076 /* RoundWaterLinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E3A1DAF682700E94076 /* RoundWaterLinesViewController.m */; };
 		E0CA8E3E1DAF685000E94076 /* TouchPopViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E3D1DAF685000E94076 /* TouchPopViewViewController.m */; };
 		E0CA8E441DAF6D5200E94076 /* WPYBarAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA8E431DAF6D5200E94076 /* WPYBarAnimationView.m */; };
+		E0DE02E51DB612C600C4C0AE /* WPYTouchPopCircelView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DE02E41DB612C600C4C0AE /* WPYTouchPopCircelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -294,6 +295,8 @@
 		E0CA8E3D1DAF685000E94076 /* TouchPopViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPopViewViewController.m; sourceTree = "<group>"; };
 		E0CA8E421DAF6D5200E94076 /* WPYBarAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYBarAnimationView.h; sourceTree = "<group>"; };
 		E0CA8E431DAF6D5200E94076 /* WPYBarAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYBarAnimationView.m; sourceTree = "<group>"; };
+		E0DE02E31DB612C600C4C0AE /* WPYTouchPopCircelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYTouchPopCircelView.h; sourceTree = "<group>"; };
+		E0DE02E41DB612C600C4C0AE /* WPYTouchPopCircelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYTouchPopCircelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -862,6 +865,8 @@
 		E0CA8E411DAF6BC200E94076 /* TouchPopViewAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E0DE02E31DB612C600C4C0AE /* WPYTouchPopCircelView.h */,
+				E0DE02E41DB612C600C4C0AE /* WPYTouchPopCircelView.m */,
 			);
 			path = TouchPopViewAnimation;
 			sourceTree = "<group>";
@@ -1019,6 +1024,7 @@
 				E0952AD21D6EDC43001A8177 /* WPYSpinerLayer.m in Sources */,
 				E087449F1D6169B200C4E190 /* MagicalMoveCell.m in Sources */,
 				E026A00E1D76CB3F009103DE /* WPYCubeAnimationLayer.m in Sources */,
+				E0DE02E51DB612C600C4C0AE /* WPYTouchPopCircelView.m in Sources */,
 				E0BF87F71D7982AC008210FF /* LoginIconAnimationVC.m in Sources */,
 				E0CA8E3B1DAF682700E94076 /* RoundWaterLinesViewController.m in Sources */,
 				9708DEE51D4E5EB700976897 /* ChangeViewAnimationViewController.m in Sources */,

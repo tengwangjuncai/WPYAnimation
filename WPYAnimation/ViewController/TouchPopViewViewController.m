@@ -7,18 +7,34 @@
 //
 
 #import "TouchPopViewViewController.h"
-
+#import "WPYTouchPopCircelView.h"
 @interface TouchPopViewViewController ()
 
+@property (nonatomic ,strong)WPYTouchPopCircelView * CircleView;
 @end
 
 @implementation TouchPopViewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.CircleView = [[WPYTouchPopCircelView alloc] init];
+    [self.CircleView setFrame:CGRectMake(0, 0, 50, 50) withSuperView:self];
+    
+}
+- (void)updateFrame {
+    
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.CircleView touchBegan:touches];
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.CircleView touchMove:touches];
+}
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.CircleView touchEnd:touches];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
