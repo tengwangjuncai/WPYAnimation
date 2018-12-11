@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30D0F08E2109A375001AEEF8 /* takePhotosBtnAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D0F08D2109A375001AEEF8 /* takePhotosBtnAnimationVC.m */; };
 		9708DEB31D4E53D900976897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DEB21D4E53D900976897 /* main.m */; };
 		9708DEB61D4E53D900976897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DEB51D4E53D900976897 /* AppDelegate.m */; };
 		9708DEB91D4E53D900976897 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DEB81D4E53D900976897 /* ViewController.m */; };
@@ -45,15 +46,24 @@
 		9708DF181D4E60A300976897 /* 美女07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9708DF011D4E60A300976897 /* 美女07.jpg */; };
 		9708DF1B1D4E6E9900976897 /* ImagesAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DF1A1D4E6E9900976897 /* ImagesAnimation.m */; };
 		E004690B1D8E902000281BC5 /* LoginViewAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E004690A1D8E902000281BC5 /* LoginViewAnimationVC.m */; };
+		E00B7F2F1DF695870012684C /* WPYDynamicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E00B7F2E1DF695870012684C /* WPYDynamicsView.m */; };
+		E00B7F481DF6C2E50012684C /* Dynamics.m in Sources */ = {isa = PBXBuildFile; fileRef = E00B7F471DF6C2E50012684C /* Dynamics.m */; };
 		E00CEE941DB0AE1E000C5224 /* WPYCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E00CEE931DB0AE1E000C5224 /* WPYCircleView.m */; };
 		E00CEE971DB0B37D000C5224 /* WPYCircelWaveAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E00CEE961DB0B37D000C5224 /* WPYCircelWaveAnimationView.m */; };
 		E026A00E1D76CB3F009103DE /* WPYCubeAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A00D1D76CB3F009103DE /* WPYCubeAnimationLayer.m */; };
 		E026A0111D76E380009103DE /* WPY3DCubeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A0101D76E380009103DE /* WPY3DCubeAnimationView.m */; };
 		E048FD391D8945800058B495 /* WPYPrintPaperLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E048FD381D8945800058B495 /* WPYPrintPaperLoginView.m */; };
 		E05870E71D62AB5100CE5019 /* PopViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E05870E61D62AB5100CE5019 /* PopViewVC.m */; };
+		E05A21261E24EF460080BE3B /* fuzzydecetion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E05A21231E24EF460080BE3B /* fuzzydecetion.mm */; };
+		E05A21271E24EF460080BE3B /* ImageCalibrateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E05A21251E24EF460080BE3B /* ImageCalibrateTool.m */; };
 		E06F46011D66A0C80004FABF /* PageCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06F46001D66A0C80004FABF /* PageCoverVC.m */; };
 		E06F46041D66A1490004FABF /* PageCoverPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06F46031D66A1490004FABF /* PageCoverPushVC.m */; };
 		E070A3361D88EBD000F14B10 /* printPaper.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3351D88EBD000F14B10 /* printPaper.png */; };
+		E070FB581E25CF30007D0A45 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070FB571E25CF30007D0A45 /* UserNotifications.framework */; };
+		E070FB5A1E25CF62007D0A45 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070FB591E25CF62007D0A45 /* CoreMotion.framework */; };
+		E070FB5C1E25CFA5007D0A45 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070FB5B1E25CFA5007D0A45 /* CoreTelephony.framework */; };
+		E070FB5E1E25D00D007D0A45 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070FB5D1E25D00D007D0A45 /* AdSupport.framework */; };
+		E070FB601E25D077007D0A45 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070FB5F1E25D077007D0A45 /* JavaScriptCore.framework */; };
 		E0727A391D640D1C00FFF48C /* PopViewPresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0727A381D640D1C00FFF48C /* PopViewPresentVC.m */; };
 		E072F07E1D87AA0B005B6A0D /* textViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E072F07D1D87AA0B005B6A0D /* textViewVC.m */; };
 		E072F0801D87ABCC005B6A0D /* root.png in Resources */ = {isa = PBXBuildFile; fileRef = E072F07F1D87ABCC005B6A0D /* root.png */; };
@@ -108,7 +118,20 @@
 		E091D68C1D5899F300C5A7EF /* ViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E091D68B1D5899F300C5A7EF /* ViewAnimation.m */; };
 		E0952ACC1D6ED021001A8177 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = E0952ACB1D6ED021001A8177 /* login.png */; };
 		E0952AD21D6EDC43001A8177 /* WPYSpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0952AD11D6EDC43001A8177 /* WPYSpinerLayer.m */; };
+		E09694CC1DC08B50001A9B27 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E09694CB1DC08B50001A9B27 /* CustomImageView.m */; };
+		E09694CF1DC08CB8001A9B27 /* WPYIrregularViewChange.m in Sources */ = {isa = PBXBuildFile; fileRef = E09694CE1DC08CB8001A9B27 /* WPYIrregularViewChange.m */; };
+		E09694D71DC08E12001A9B27 /* back_upper_limb.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D11DC08E12001A9B27 /* back_upper_limb.png */; };
+		E09694D81DC08E12001A9B27 /* back_head_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D21DC08E12001A9B27 /* back_head_p.png */; };
+		E09694D91DC08E12001A9B27 /* back_backside_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D31DC08E12001A9B27 /* back_backside_p.png */; };
+		E09694DA1DC08E12001A9B27 /* back_backside.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D41DC08E12001A9B27 /* back_backside.png */; };
+		E09694DB1DC08E12001A9B27 /* back_head.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D51DC08E12001A9B27 /* back_head.png */; };
+		E09694DC1DC08E12001A9B27 /* back_upper_limb_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D61DC08E12001A9B27 /* back_upper_limb_p.png */; };
+		E09694DF1DC093A4001A9B27 /* IrregularViewChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E09694DE1DC093A4001A9B27 /* IrregularViewChangeVC.m */; };
+		E09D0B561E24E69E00CF0D74 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09D0B551E24E69E00CF0D74 /* opencv2.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E0A61CC11D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A61CC01D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png */; };
+		E0BD5FBF1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BD5FBE1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m */; };
+		E0BD5FC21DB8AE7700F0E956 /* WPYRadarViewAmimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BD5FC11DB8AE7700F0E956 /* WPYRadarViewAmimation.m */; };
+		E0BD5FC51DB8C23200F0E956 /* RadarAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BD5FC41DB8C23200F0E956 /* RadarAnimationVC.m */; };
 		E0BF87F11D7915D6008210FF /* LoginBtnAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F01D7915D6008210FF /* LoginBtnAnimationVC.m */; };
 		E0BF87F41D795CE5008210FF /* WPYLoginIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F31D795CE5008210FF /* WPYLoginIcon.m */; };
 		E0BF87F71D7982AC008210FF /* LoginIconAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF87F61D7982AC008210FF /* LoginIconAnimationVC.m */; };
@@ -121,6 +144,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30D0F08C2109A375001AEEF8 /* takePhotosBtnAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = takePhotosBtnAnimationVC.h; sourceTree = "<group>"; };
+		30D0F08D2109A375001AEEF8 /* takePhotosBtnAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = takePhotosBtnAnimationVC.m; sourceTree = "<group>"; };
 		9708DEAE1D4E53D900976897 /* WPYAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPYAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9708DEB21D4E53D900976897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9708DEB41D4E53D900976897 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +197,10 @@
 		9708DF1A1D4E6E9900976897 /* ImagesAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesAnimation.m; sourceTree = "<group>"; };
 		E00469091D8E902000281BC5 /* LoginViewAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewAnimationVC.h; sourceTree = "<group>"; };
 		E004690A1D8E902000281BC5 /* LoginViewAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewAnimationVC.m; sourceTree = "<group>"; };
+		E00B7F2D1DF695870012684C /* WPYDynamicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYDynamicsView.h; sourceTree = "<group>"; };
+		E00B7F2E1DF695870012684C /* WPYDynamicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYDynamicsView.m; sourceTree = "<group>"; };
+		E00B7F461DF6C2E50012684C /* Dynamics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dynamics.h; sourceTree = "<group>"; };
+		E00B7F471DF6C2E50012684C /* Dynamics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dynamics.m; sourceTree = "<group>"; };
 		E00CEE921DB0AE1E000C5224 /* WPYCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYCircleView.h; sourceTree = "<group>"; };
 		E00CEE931DB0AE1E000C5224 /* WPYCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYCircleView.m; sourceTree = "<group>"; };
 		E00CEE951DB0B37D000C5224 /* WPYCircelWaveAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYCircelWaveAnimationView.h; sourceTree = "<group>"; };
@@ -184,11 +213,20 @@
 		E048FD381D8945800058B495 /* WPYPrintPaperLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYPrintPaperLoginView.m; sourceTree = "<group>"; };
 		E05870E51D62AB5100CE5019 /* PopViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewVC.h; sourceTree = "<group>"; };
 		E05870E61D62AB5100CE5019 /* PopViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewVC.m; sourceTree = "<group>"; };
+		E05A21221E24EF460080BE3B /* fuzzydecetion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuzzydecetion.h; sourceTree = "<group>"; };
+		E05A21231E24EF460080BE3B /* fuzzydecetion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = fuzzydecetion.mm; sourceTree = "<group>"; };
+		E05A21241E24EF460080BE3B /* ImageCalibrateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCalibrateTool.h; sourceTree = "<group>"; };
+		E05A21251E24EF460080BE3B /* ImageCalibrateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCalibrateTool.m; sourceTree = "<group>"; };
 		E06F45FF1D66A0C80004FABF /* PageCoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCoverVC.h; sourceTree = "<group>"; };
 		E06F46001D66A0C80004FABF /* PageCoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCoverVC.m; sourceTree = "<group>"; };
 		E06F46021D66A1490004FABF /* PageCoverPushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCoverPushVC.h; sourceTree = "<group>"; };
 		E06F46031D66A1490004FABF /* PageCoverPushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCoverPushVC.m; sourceTree = "<group>"; };
 		E070A3351D88EBD000F14B10 /* printPaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = printPaper.png; sourceTree = "<group>"; };
+		E070FB571E25CF30007D0A45 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		E070FB591E25CF62007D0A45 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E070FB5B1E25CFA5007D0A45 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E070FB5D1E25D00D007D0A45 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E070FB5F1E25D077007D0A45 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		E0727A371D640D1C00FFF48C /* PopViewPresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewPresentVC.h; sourceTree = "<group>"; };
 		E0727A381D640D1C00FFF48C /* PopViewPresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewPresentVC.m; sourceTree = "<group>"; };
 		E072F07C1D87AA0B005B6A0D /* textViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textViewVC.h; sourceTree = "<group>"; };
@@ -278,7 +316,26 @@
 		E0952ACB1D6ED021001A8177 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		E0952AD01D6EDC43001A8177 /* WPYSpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYSpinerLayer.h; sourceTree = "<group>"; };
 		E0952AD11D6EDC43001A8177 /* WPYSpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYSpinerLayer.m; sourceTree = "<group>"; };
+		E09694CA1DC08B50001A9B27 /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		E09694CB1DC08B50001A9B27 /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		E09694CD1DC08CB8001A9B27 /* WPYIrregularViewChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYIrregularViewChange.h; sourceTree = "<group>"; };
+		E09694CE1DC08CB8001A9B27 /* WPYIrregularViewChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYIrregularViewChange.m; sourceTree = "<group>"; };
+		E09694D11DC08E12001A9B27 /* back_upper_limb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_upper_limb.png; sourceTree = "<group>"; };
+		E09694D21DC08E12001A9B27 /* back_head_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_head_p.png; sourceTree = "<group>"; };
+		E09694D31DC08E12001A9B27 /* back_backside_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_backside_p.png; sourceTree = "<group>"; };
+		E09694D41DC08E12001A9B27 /* back_backside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_backside.png; sourceTree = "<group>"; };
+		E09694D51DC08E12001A9B27 /* back_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_head.png; sourceTree = "<group>"; };
+		E09694D61DC08E12001A9B27 /* back_upper_limb_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_upper_limb_p.png; sourceTree = "<group>"; };
+		E09694DD1DC093A4001A9B27 /* IrregularViewChangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IrregularViewChangeVC.h; sourceTree = "<group>"; };
+		E09694DE1DC093A4001A9B27 /* IrregularViewChangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IrregularViewChangeVC.m; sourceTree = "<group>"; };
+		E09D0B551E24E69E00CF0D74 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		E0A61CC01D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		E0BD5FBD1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYRadarIndicatorViewAnimation.h; sourceTree = "<group>"; };
+		E0BD5FBE1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYRadarIndicatorViewAnimation.m; sourceTree = "<group>"; };
+		E0BD5FC01DB8AE7700F0E956 /* WPYRadarViewAmimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYRadarViewAmimation.h; sourceTree = "<group>"; };
+		E0BD5FC11DB8AE7700F0E956 /* WPYRadarViewAmimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYRadarViewAmimation.m; sourceTree = "<group>"; };
+		E0BD5FC31DB8C23200F0E956 /* RadarAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarAnimationVC.h; sourceTree = "<group>"; };
+		E0BD5FC41DB8C23200F0E956 /* RadarAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarAnimationVC.m; sourceTree = "<group>"; };
 		E0BF87EF1D7915D6008210FF /* LoginBtnAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginBtnAnimationVC.h; sourceTree = "<group>"; };
 		E0BF87F01D7915D6008210FF /* LoginBtnAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBtnAnimationVC.m; sourceTree = "<group>"; };
 		E0BF87F21D795CE5008210FF /* WPYLoginIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYLoginIcon.h; sourceTree = "<group>"; };
@@ -304,6 +361,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E070FB601E25D077007D0A45 /* JavaScriptCore.framework in Frameworks */,
+				E070FB5E1E25D00D007D0A45 /* AdSupport.framework in Frameworks */,
+				E070FB5C1E25CFA5007D0A45 /* CoreTelephony.framework in Frameworks */,
+				E070FB5A1E25CF62007D0A45 /* CoreMotion.framework in Frameworks */,
+				E070FB581E25CF30007D0A45 /* UserNotifications.framework in Frameworks */,
+				E09D0B561E24E69E00CF0D74 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +378,7 @@
 			children = (
 				9708DEB01D4E53D900976897 /* WPYAnimation */,
 				9708DEAF1D4E53D900976897 /* Products */,
+				E070FB561E25CF30007D0A45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -329,6 +393,7 @@
 		9708DEB01D4E53D900976897 /* WPYAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E09D0B551E24E69E00CF0D74 /* opencv2.framework */,
 				9708DED91D4E5CEE00976897 /* ViewController */,
 				9708DED21D4E5AD500976897 /* BaseViewController */,
 				9708DECA1D4E547E00976897 /* WPYAnimation */,
@@ -359,6 +424,9 @@
 		9708DECA1D4E547E00976897 /* WPYAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E00B7F2C1DF66F770012684C /* WPYDynamics */,
+				E09694C91DC08B0D001A9B27 /* IrregularViewChange */,
+				E0BD5FBC1DB86DDE00F0E956 /* RadarViewAnimation */,
 				E0CA8E411DAF6BC200E94076 /* TouchPopViewAnimation */,
 				E0CA8E401DAF6B8400E94076 /* RoundWaterLinesAnimation */,
 				E0CA8E3F1DAF6B5700E94076 /* BarAnimationView */,
@@ -451,6 +519,7 @@
 		9708DED91D4E5CEE00976897 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E05A21211E24EF460080BE3B /* ImageCalibrate */,
 				E0CA8E311DAF64F800E94076 /* CoreAnimation */,
 				E0646FE61D78243B0037A9C7 /* FunctionAnimation */,
 				E091D6861D58824700C5A7EF /* TransitionAnimation */,
@@ -506,6 +575,15 @@
 			path = webChat;
 			sourceTree = "<group>";
 		};
+		E00B7F2C1DF66F770012684C /* WPYDynamics */ = {
+			isa = PBXGroup;
+			children = (
+				E00B7F2D1DF695870012684C /* WPYDynamicsView.h */,
+				E00B7F2E1DF695870012684C /* WPYDynamicsView.m */,
+			);
+			path = WPYDynamics;
+			sourceTree = "<group>";
+		};
 		E05870E41D62AB1700CE5019 /* PopViewVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -515,6 +593,17 @@
 				E0727A381D640D1C00FFF48C /* PopViewPresentVC.m */,
 			);
 			path = PopViewVC;
+			sourceTree = "<group>";
+		};
+		E05A21211E24EF460080BE3B /* ImageCalibrate */ = {
+			isa = PBXGroup;
+			children = (
+				E05A21221E24EF460080BE3B /* fuzzydecetion.h */,
+				E05A21231E24EF460080BE3B /* fuzzydecetion.mm */,
+				E05A21241E24EF460080BE3B /* ImageCalibrateTool.h */,
+				E05A21251E24EF460080BE3B /* ImageCalibrateTool.m */,
+			);
+			path = ImageCalibrate;
 			sourceTree = "<group>";
 		};
 		E0646FE61D78243B0037A9C7 /* FunctionAnimation */ = {
@@ -536,6 +625,18 @@
 				E06F46031D66A1490004FABF /* PageCoverPushVC.m */,
 			);
 			path = PageCoverVC;
+			sourceTree = "<group>";
+		};
+		E070FB561E25CF30007D0A45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E070FB5F1E25D077007D0A45 /* JavaScriptCore.framework */,
+				E070FB5D1E25D00D007D0A45 /* AdSupport.framework */,
+				E070FB5B1E25CFA5007D0A45 /* CoreTelephony.framework */,
+				E070FB591E25CF62007D0A45 /* CoreMotion.framework */,
+				E070FB571E25CF30007D0A45 /* UserNotifications.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E080E2E71D596F4400EFFA8A /* customTransitionAnimation */ = {
@@ -802,6 +903,42 @@
 			path = LoginViewAnimation;
 			sourceTree = "<group>";
 		};
+		E09694C91DC08B0D001A9B27 /* IrregularViewChange */ = {
+			isa = PBXGroup;
+			children = (
+				E09694D01DC08E00001A9B27 /* images */,
+				E09694CA1DC08B50001A9B27 /* CustomImageView.h */,
+				E09694CB1DC08B50001A9B27 /* CustomImageView.m */,
+				E09694CD1DC08CB8001A9B27 /* WPYIrregularViewChange.h */,
+				E09694CE1DC08CB8001A9B27 /* WPYIrregularViewChange.m */,
+			);
+			path = IrregularViewChange;
+			sourceTree = "<group>";
+		};
+		E09694D01DC08E00001A9B27 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E09694D11DC08E12001A9B27 /* back_upper_limb.png */,
+				E09694D21DC08E12001A9B27 /* back_head_p.png */,
+				E09694D31DC08E12001A9B27 /* back_backside_p.png */,
+				E09694D41DC08E12001A9B27 /* back_backside.png */,
+				E09694D51DC08E12001A9B27 /* back_head.png */,
+				E09694D61DC08E12001A9B27 /* back_upper_limb_p.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E0BD5FBC1DB86DDE00F0E956 /* RadarViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E0BD5FBD1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.h */,
+				E0BD5FBE1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m */,
+				E0BD5FC01DB8AE7700F0E956 /* WPYRadarViewAmimation.h */,
+				E0BD5FC11DB8AE7700F0E956 /* WPYRadarViewAmimation.m */,
+			);
+			path = RadarViewAnimation;
+			sourceTree = "<group>";
+		};
 		E0BF87EE1D791579008210FF /* AnimationVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -838,6 +975,14 @@
 				E0CA8E3A1DAF682700E94076 /* RoundWaterLinesViewController.m */,
 				E0CA8E3C1DAF685000E94076 /* TouchPopViewViewController.h */,
 				E0CA8E3D1DAF685000E94076 /* TouchPopViewViewController.m */,
+				E0BD5FC31DB8C23200F0E956 /* RadarAnimationVC.h */,
+				E0BD5FC41DB8C23200F0E956 /* RadarAnimationVC.m */,
+				E09694DD1DC093A4001A9B27 /* IrregularViewChangeVC.h */,
+				E09694DE1DC093A4001A9B27 /* IrregularViewChangeVC.m */,
+				E00B7F461DF6C2E50012684C /* Dynamics.h */,
+				E00B7F471DF6C2E50012684C /* Dynamics.m */,
+				30D0F08C2109A375001AEEF8 /* takePhotosBtnAnimationVC.h */,
+				30D0F08D2109A375001AEEF8 /* takePhotosBtnAnimationVC.m */,
 			);
 			name = AnimationVC;
 			sourceTree = "<group>";
@@ -944,25 +1089,31 @@
 				9708DF0E1D4E60A300976897 /* tabbar_discoverHL@2x.png in Resources */,
 				E0952ACC1D6ED021001A8177 /* login.png in Resources */,
 				E08898801D54649100AD4870 /* runner5.jpg in Resources */,
+				E09694DB1DC08E12001A9B27 /* back_head.png in Resources */,
 				9708DF0B1D4E60A300976897 /* tabbar_contactsHL@3x.png in Resources */,
 				E091D6701D586D1100C5A7EF /* basket2.jpg in Resources */,
 				E080E2FF1D59C26F00EFFA8A /* book.jpg in Resources */,
 				E091D67D1D586D1600C5A7EF /* p2.jpg in Resources */,
 				E088988F1D5496C200AD4870 /* qiu1.png in Resources */,
+				E09694D71DC08E12001A9B27 /* back_upper_limb.png in Resources */,
 				9708DF021D4E60A300976897 /* 1.png in Resources */,
 				9708DF0F1D4E60A300976897 /* tabbar_discoverHL@3x.png in Resources */,
 				E091D67E1D586D1600C5A7EF /* pic.jpg in Resources */,
 				9708DF0D1D4E60A300976897 /* tabbar_discover@3x.png in Resources */,
+				E09694DC1DC08E12001A9B27 /* back_upper_limb_p.png in Resources */,
 				9708DF111D4E60A300976897 /* tabbar_mainframe@3x.png in Resources */,
 				9708DF081D4E60A300976897 /* tabbar_contacts@2x.png in Resources */,
 				E088987E1D54649100AD4870 /* runner3.jpg in Resources */,
 				E091D67B1D586D1600C5A7EF /* k1.png in Resources */,
 				9708DF031D4E60A300976897 /* 2.png in Resources */,
 				E088987F1D54649100AD4870 /* runner4.jpg in Resources */,
+				E09694DA1DC08E12001A9B27 /* back_backside.png in Resources */,
+				E09694D81DC08E12001A9B27 /* back_head_p.png in Resources */,
 				E091D67C1D586D1600C5A7EF /* lunner2.jpg in Resources */,
 				9708DF071D4E60A300976897 /* tabbar_bg@2x.png in Resources */,
 				9708DF0A1D4E60A300976897 /* tabbar_contactsHL@2x.png in Resources */,
 				E08744A01D6169B200C4E190 /* MagicalMoveCell.xib in Resources */,
+				E09694D91DC08E12001A9B27 /* back_backside_p.png in Resources */,
 				9708DF061D4E60A300976897 /* tabbar_bg.png in Resources */,
 				E091D6721D586D1100C5A7EF /* person1.jpg in Resources */,
 				E091D67F1D586D1600C5A7EF /* tree.jpg in Resources */,
@@ -993,8 +1144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BD5FBF1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m in Sources */,
 				9708DEE21D4E5E9000976897 /* CoreAnimationViewController.m in Sources */,
 				E0BF87F11D7915D6008210FF /* LoginBtnAnimationVC.m in Sources */,
+				E00B7F2F1DF695870012684C /* WPYDynamicsView.m in Sources */,
 				E080E31A1D59C45300EFFA8A /* MASCompositeConstraint.m in Sources */,
 				E080E3231D59C45300EFFA8A /* ViewController+MASAdditions.m in Sources */,
 				E06F46011D66A0C80004FABF /* PageCoverVC.m in Sources */,
@@ -1002,9 +1155,12 @@
 				E00CEE971DB0B37D000C5224 /* WPYCircelWaveAnimationView.m in Sources */,
 				E080E2F61D59BB0C00EFFA8A /* CircleSpreadVC.m in Sources */,
 				E00CEE941DB0AE1E000C5224 /* WPYCircleView.m in Sources */,
+				E0BD5FC21DB8AE7700F0E956 /* WPYRadarViewAmimation.m in Sources */,
+				30D0F08E2109A375001AEEF8 /* takePhotosBtnAnimationVC.m in Sources */,
 				E080E2ED1D5984F800EFFA8A /* WPYTransitionGesture.m in Sources */,
 				9708DED51D4E5AEA00976897 /* WPYTabBarController.m in Sources */,
 				E088986B1D54427700AD4870 /* WPYButton.m in Sources */,
+				E05A21271E24EF460080BE3B /* ImageCalibrateTool.m in Sources */,
 				E087449B1D615D3F00C4E190 /* MagicalMovePushVC.m in Sources */,
 				E080E31D1D59C45300EFFA8A /* MASLayoutConstraint.m in Sources */,
 				E080E3201D59C45300EFFA8A /* NSArray+MASAdditions.m in Sources */,
@@ -1016,6 +1172,7 @@
 				E080E31B1D59C45300EFFA8A /* MASConstraint.m in Sources */,
 				9708DF1B1D4E6E9900976897 /* ImagesAnimation.m in Sources */,
 				E08744981D615CE800C4E190 /* MagicalMoveVC.m in Sources */,
+				E09694DF1DC093A4001A9B27 /* IrregularViewChangeVC.m in Sources */,
 				E048FD391D8945800058B495 /* WPYPrintPaperLoginView.m in Sources */,
 				E06F46041D66A1490004FABF /* PageCoverPushVC.m in Sources */,
 				E080E31F1D59C45300EFFA8A /* MASViewConstraint.m in Sources */,
@@ -1024,8 +1181,10 @@
 				E0952AD21D6EDC43001A8177 /* WPYSpinerLayer.m in Sources */,
 				E087449F1D6169B200C4E190 /* MagicalMoveCell.m in Sources */,
 				E026A00E1D76CB3F009103DE /* WPYCubeAnimationLayer.m in Sources */,
+				E0BD5FC51DB8C23200F0E956 /* RadarAnimationVC.m in Sources */,
 				E0DE02E51DB612C600C4C0AE /* WPYTouchPopCircelView.m in Sources */,
 				E0BF87F71D7982AC008210FF /* LoginIconAnimationVC.m in Sources */,
+				E09694CF1DC08CB8001A9B27 /* WPYIrregularViewChange.m in Sources */,
 				E0CA8E3B1DAF682700E94076 /* RoundWaterLinesViewController.m in Sources */,
 				9708DEE51D4E5EB700976897 /* ChangeViewAnimationViewController.m in Sources */,
 				E0CA8E441DAF6D5200E94076 /* WPYBarAnimationView.m in Sources */,
@@ -1034,15 +1193,18 @@
 				E080E31E1D59C45300EFFA8A /* MASViewAttribute.m in Sources */,
 				E026A0111D76E380009103DE /* WPY3DCubeAnimationView.m in Sources */,
 				E080E2EA1D596FE600EFFA8A /* WPYTransition.m in Sources */,
+				E00B7F481DF6C2E50012684C /* Dynamics.m in Sources */,
 				9708DEDF1D4E5E4900976897 /* UIViewAnimationViewController.m in Sources */,
 				9708DEB91D4E53D900976897 /* ViewController.m in Sources */,
 				E004690B1D8E902000281BC5 /* LoginViewAnimationVC.m in Sources */,
 				9708DEB61D4E53D900976897 /* AppDelegate.m in Sources */,
 				9708DEB31D4E53D900976897 /* main.m in Sources */,
+				E05A21261E24EF460080BE3B /* fuzzydecetion.mm in Sources */,
 				E0CA8E351DAF659700E94076 /* Cube3DViewController.m in Sources */,
 				E0BF87F41D795CE5008210FF /* WPYLoginIcon.m in Sources */,
 				E091D6691D5827CD00C5A7EF /* WPYPopView.m in Sources */,
 				E080E3211D59C45300EFFA8A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E09694CC1DC08B50001A9B27 /* CustomImageView.m in Sources */,
 				9708DED81D4E5B1100976897 /* WPYNavigationController.m in Sources */,
 				E05870E71D62AB5100CE5019 /* PopViewVC.m in Sources */,
 				9708DEE81D4E5F9800976897 /* FunctionAnimationViewController.m in Sources */,
@@ -1168,6 +1330,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U7NTNRMAV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WPYAnimation",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/pch.pch";
 				INFOPLIST_FILE = WPYAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1184,6 +1350,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U7NTNRMAV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WPYAnimation",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/pch.pch";
 				INFOPLIST_FILE = WPYAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;

@@ -202,6 +202,7 @@
     fromVC.view.layer.mask = maskLayer;
     //创建路径动画
     CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+    
     maskLayerAnimation.delegate = self;
     maskLayerAnimation.fromValue = (__bridge id)(startCycle.CGPath);
     maskLayerAnimation.toValue = (__bridge id)((endCycle.CGPath));
@@ -286,6 +287,9 @@
 - (void)MagicalMovePushAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     MagicalMoveVC *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     MagicalMovePushVC *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+
+    
+    
     //获取当前点击的cell
     MagicalMoveCell *cell = (MagicalMoveCell *)[fromVC.collectionView cellForItemAtIndexPath:fromVC.currentIndexPath];
     //获取containnerView
@@ -313,6 +317,7 @@
         
         [transitionContext completeTransition:YES];
     }];
+//     [transitionContext completeTransition:YES];
 }
 
 #pragma mark -- 打印机转场Present动画

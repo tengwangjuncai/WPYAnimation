@@ -11,6 +11,10 @@
 #import "BarAnimationViewController.h"
 #import "RoundWaterLinesViewController.h"
 #import "TouchPopViewViewController.h"
+#import "RadarAnimationVC.h"
+#import "IrregularViewChangeVC.h"
+#import "Dynamics.h"
+#import "takePhotosBtnAnimationVC.h"
 @interface CoreAnimationViewController ()
 
 @end
@@ -20,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     [WPYButton createBtn:@[@"3D立方体动画",@"条形动画",@"水波纹动画",@"点击弹性圆圈动画"] Action:@selector(btnClicked:) SuperVC:self];
+    [WPYButton createBtn:@[@"3D立方体动画",@"条形动画",@"水波纹动画",@"点击弹性圆圈动画",@"雷达扫描动画",@"不规则图形变化",@"物理仿真动画",@"拍照按钮动画"] Action:@selector(btnClicked:) SuperVC:self];
 }
 
 - (void)btnClicked:(UIButton *)btn {
@@ -50,6 +54,34 @@
         {
             TouchPopViewViewController * vc = [[TouchPopViewViewController alloc] init];
             vc.view.backgroundColor = [UIColor colorWithRed:ColorValue green:ColorValue blue:ColorValue alpha:1];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 104:
+        {
+            RadarAnimationVC * vc = [[RadarAnimationVC alloc] init];
+            vc.view.backgroundColor = [UIColor blackColor];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 105:
+        {
+            IrregularViewChangeVC * vc = [[IrregularViewChangeVC alloc] init];
+            vc.view.backgroundColor = [UIColor whiteColor];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 106:
+        {
+            Dynamics * vc = [[Dynamics alloc] init];
+            vc.view.backgroundColor = [UIColor whiteColor];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 107:
+        {
+            takePhotosBtnAnimationVC * vc = [[takePhotosBtnAnimationVC alloc] init];
+            //vc.view.backgroundColor = [UIColor orangeColor];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
