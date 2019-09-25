@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		30D0F08E2109A375001AEEF8 /* takePhotosBtnAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D0F08D2109A375001AEEF8 /* takePhotosBtnAnimationVC.m */; };
+		30F16466233B42C7002AFE19 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F16465233B42C6002AFE19 /* AssetsLibrary.framework */; };
+		30F16468233B42D8002AFE19 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F16467233B42D7002AFE19 /* AVFoundation.framework */; };
+		30F1646A233B42E9002AFE19 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F16469233B42E8002AFE19 /* CoreMedia.framework */; };
+		30F1646C233B42FA002AFE19 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F1646B233B42FA002AFE19 /* CoreVideo.framework */; };
 		9708DEB31D4E53D900976897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DEB21D4E53D900976897 /* main.m */; };
 		9708DEB61D4E53D900976897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DEB51D4E53D900976897 /* AppDelegate.m */; };
 		9708DEB91D4E53D900976897 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708DEB81D4E53D900976897 /* ViewController.m */; };
@@ -54,8 +58,6 @@
 		E026A0111D76E380009103DE /* WPY3DCubeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E026A0101D76E380009103DE /* WPY3DCubeAnimationView.m */; };
 		E048FD391D8945800058B495 /* WPYPrintPaperLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E048FD381D8945800058B495 /* WPYPrintPaperLoginView.m */; };
 		E05870E71D62AB5100CE5019 /* PopViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E05870E61D62AB5100CE5019 /* PopViewVC.m */; };
-		E05A21261E24EF460080BE3B /* fuzzydecetion.mm in Sources */ = {isa = PBXBuildFile; fileRef = E05A21231E24EF460080BE3B /* fuzzydecetion.mm */; };
-		E05A21271E24EF460080BE3B /* ImageCalibrateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E05A21251E24EF460080BE3B /* ImageCalibrateTool.m */; };
 		E06F46011D66A0C80004FABF /* PageCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06F46001D66A0C80004FABF /* PageCoverVC.m */; };
 		E06F46041D66A1490004FABF /* PageCoverPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06F46031D66A1490004FABF /* PageCoverPushVC.m */; };
 		E070A3361D88EBD000F14B10 /* printPaper.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3351D88EBD000F14B10 /* printPaper.png */; };
@@ -127,7 +129,6 @@
 		E09694DB1DC08E12001A9B27 /* back_head.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D51DC08E12001A9B27 /* back_head.png */; };
 		E09694DC1DC08E12001A9B27 /* back_upper_limb_p.png in Resources */ = {isa = PBXBuildFile; fileRef = E09694D61DC08E12001A9B27 /* back_upper_limb_p.png */; };
 		E09694DF1DC093A4001A9B27 /* IrregularViewChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E09694DE1DC093A4001A9B27 /* IrregularViewChangeVC.m */; };
-		E09D0B561E24E69E00CF0D74 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09D0B551E24E69E00CF0D74 /* opencv2.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E0A61CC11D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A61CC01D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png */; };
 		E0BD5FBF1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BD5FBE1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m */; };
 		E0BD5FC21DB8AE7700F0E956 /* WPYRadarViewAmimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BD5FC11DB8AE7700F0E956 /* WPYRadarViewAmimation.m */; };
@@ -146,6 +147,10 @@
 /* Begin PBXFileReference section */
 		30D0F08C2109A375001AEEF8 /* takePhotosBtnAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = takePhotosBtnAnimationVC.h; sourceTree = "<group>"; };
 		30D0F08D2109A375001AEEF8 /* takePhotosBtnAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = takePhotosBtnAnimationVC.m; sourceTree = "<group>"; };
+		30F16465233B42C6002AFE19 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		30F16467233B42D7002AFE19 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		30F16469233B42E8002AFE19 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		30F1646B233B42FA002AFE19 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		9708DEAE1D4E53D900976897 /* WPYAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPYAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9708DEB21D4E53D900976897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9708DEB41D4E53D900976897 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -213,10 +218,6 @@
 		E048FD381D8945800058B495 /* WPYPrintPaperLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYPrintPaperLoginView.m; sourceTree = "<group>"; };
 		E05870E51D62AB5100CE5019 /* PopViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewVC.h; sourceTree = "<group>"; };
 		E05870E61D62AB5100CE5019 /* PopViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewVC.m; sourceTree = "<group>"; };
-		E05A21221E24EF460080BE3B /* fuzzydecetion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuzzydecetion.h; sourceTree = "<group>"; };
-		E05A21231E24EF460080BE3B /* fuzzydecetion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = fuzzydecetion.mm; sourceTree = "<group>"; };
-		E05A21241E24EF460080BE3B /* ImageCalibrateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCalibrateTool.h; sourceTree = "<group>"; };
-		E05A21251E24EF460080BE3B /* ImageCalibrateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCalibrateTool.m; sourceTree = "<group>"; };
 		E06F45FF1D66A0C80004FABF /* PageCoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCoverVC.h; sourceTree = "<group>"; };
 		E06F46001D66A0C80004FABF /* PageCoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCoverVC.m; sourceTree = "<group>"; };
 		E06F46021D66A1490004FABF /* PageCoverPushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCoverPushVC.h; sourceTree = "<group>"; };
@@ -328,7 +329,6 @@
 		E09694D61DC08E12001A9B27 /* back_upper_limb_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_upper_limb_p.png; sourceTree = "<group>"; };
 		E09694DD1DC093A4001A9B27 /* IrregularViewChangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IrregularViewChangeVC.h; sourceTree = "<group>"; };
 		E09694DE1DC093A4001A9B27 /* IrregularViewChangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IrregularViewChangeVC.m; sourceTree = "<group>"; };
-		E09D0B551E24E69E00CF0D74 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		E0A61CC01D6C38DC0012ACD9 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		E0BD5FBD1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPYRadarIndicatorViewAnimation.h; sourceTree = "<group>"; };
 		E0BD5FBE1DB86E5400F0E956 /* WPYRadarIndicatorViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPYRadarIndicatorViewAnimation.m; sourceTree = "<group>"; };
@@ -361,12 +361,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F1646C233B42FA002AFE19 /* CoreVideo.framework in Frameworks */,
+				30F1646A233B42E9002AFE19 /* CoreMedia.framework in Frameworks */,
+				30F16468233B42D8002AFE19 /* AVFoundation.framework in Frameworks */,
+				30F16466233B42C7002AFE19 /* AssetsLibrary.framework in Frameworks */,
 				E070FB601E25D077007D0A45 /* JavaScriptCore.framework in Frameworks */,
 				E070FB5E1E25D00D007D0A45 /* AdSupport.framework in Frameworks */,
 				E070FB5C1E25CFA5007D0A45 /* CoreTelephony.framework in Frameworks */,
 				E070FB5A1E25CF62007D0A45 /* CoreMotion.framework in Frameworks */,
 				E070FB581E25CF30007D0A45 /* UserNotifications.framework in Frameworks */,
-				E09D0B561E24E69E00CF0D74 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +396,6 @@
 		9708DEB01D4E53D900976897 /* WPYAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				E09D0B551E24E69E00CF0D74 /* opencv2.framework */,
 				9708DED91D4E5CEE00976897 /* ViewController */,
 				9708DED21D4E5AD500976897 /* BaseViewController */,
 				9708DECA1D4E547E00976897 /* WPYAnimation */,
@@ -519,7 +521,6 @@
 		9708DED91D4E5CEE00976897 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E05A21211E24EF460080BE3B /* ImageCalibrate */,
 				E0CA8E311DAF64F800E94076 /* CoreAnimation */,
 				E0646FE61D78243B0037A9C7 /* FunctionAnimation */,
 				E091D6861D58824700C5A7EF /* TransitionAnimation */,
@@ -595,17 +596,6 @@
 			path = PopViewVC;
 			sourceTree = "<group>";
 		};
-		E05A21211E24EF460080BE3B /* ImageCalibrate */ = {
-			isa = PBXGroup;
-			children = (
-				E05A21221E24EF460080BE3B /* fuzzydecetion.h */,
-				E05A21231E24EF460080BE3B /* fuzzydecetion.mm */,
-				E05A21241E24EF460080BE3B /* ImageCalibrateTool.h */,
-				E05A21251E24EF460080BE3B /* ImageCalibrateTool.m */,
-			);
-			path = ImageCalibrate;
-			sourceTree = "<group>";
-		};
 		E0646FE61D78243B0037A9C7 /* FunctionAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,6 +620,10 @@
 		E070FB561E25CF30007D0A45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30F1646B233B42FA002AFE19 /* CoreVideo.framework */,
+				30F16469233B42E8002AFE19 /* CoreMedia.framework */,
+				30F16467233B42D7002AFE19 /* AVFoundation.framework */,
+				30F16465233B42C6002AFE19 /* AssetsLibrary.framework */,
 				E070FB5F1E25D077007D0A45 /* JavaScriptCore.framework */,
 				E070FB5D1E25D00D007D0A45 /* AdSupport.framework */,
 				E070FB5B1E25CFA5007D0A45 /* CoreTelephony.framework */,
@@ -1057,6 +1051,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1160,7 +1155,6 @@
 				E080E2ED1D5984F800EFFA8A /* WPYTransitionGesture.m in Sources */,
 				9708DED51D4E5AEA00976897 /* WPYTabBarController.m in Sources */,
 				E088986B1D54427700AD4870 /* WPYButton.m in Sources */,
-				E05A21271E24EF460080BE3B /* ImageCalibrateTool.m in Sources */,
 				E087449B1D615D3F00C4E190 /* MagicalMovePushVC.m in Sources */,
 				E080E31D1D59C45300EFFA8A /* MASLayoutConstraint.m in Sources */,
 				E080E3201D59C45300EFFA8A /* NSArray+MASAdditions.m in Sources */,
@@ -1199,7 +1193,6 @@
 				E004690B1D8E902000281BC5 /* LoginViewAnimationVC.m in Sources */,
 				9708DEB61D4E53D900976897 /* AppDelegate.m in Sources */,
 				9708DEB31D4E53D900976897 /* main.m in Sources */,
-				E05A21261E24EF460080BE3B /* fuzzydecetion.mm in Sources */,
 				E0CA8E351DAF659700E94076 /* Cube3DViewController.m in Sources */,
 				E0BF87F41D795CE5008210FF /* WPYLoginIcon.m in Sources */,
 				E091D6691D5827CD00C5A7EF /* WPYPopView.m in Sources */,
