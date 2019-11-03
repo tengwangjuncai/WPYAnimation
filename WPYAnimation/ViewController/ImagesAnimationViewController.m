@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    // [self createBtn:@[@"图片动画",@"动态图片动画"]];
-    [WPYButton createBtn:@[@"图片动画",@"动态图片动画"] Action:@selector(btnClicked:) SuperVC:self];
+    [WPYButton createBtn:@[@"图片动画",@"动态图片动画",@"临时添加"] Action:@selector(btnClicked:) SuperVC:self];
 }
 - (void)btnClicked:(UIButton *)btn {
     if (btn.tag == 100) {
