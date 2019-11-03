@@ -25,6 +25,10 @@
     UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 200, 40)];
     btn.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:btn];
+    
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 120, 30)];
+    [self.view addSubview:view];
+    view.backgroundColor = [UIColor redColor];
 }
 - (void)btnClicked:(UIButton *)btn {
     if (btn.tag == 100) {
