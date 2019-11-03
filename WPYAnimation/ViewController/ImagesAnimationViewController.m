@@ -21,6 +21,9 @@
     // Do any additional setup after loading the view.
    // [self createBtn:@[@"图片动画",@"动态图片动画"]];
     [WPYButton createBtn:@[@"图片动画",@"动态图片动画",@"临时添加"] Action:@selector(btnClicked:) SuperVC:self];
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 120, 30)];
+    [self.view addSubview:view];
+    view.backgroundColor = [UIColor redColor];
 }
 - (void)btnClicked:(UIButton *)btn {
     if (btn.tag == 100) {
